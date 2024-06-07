@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: gainsboro !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.badge {
+  border: 1px solid gainsboro;
+  /* Set border color and thickness */
+  padding: 5px;
+  /* Set padding */
+  font-weight: bold;
+  color: darkblue !important;
+  margin: 5px;
+}
+
+.table-responsive::-webkit-scrollbar {
+  display: none;
+}
+
+.buttonrequest, .buttonrequest:hover {
+  align-items: center;
+  color: darkblue;
+  background-color: #00D7B8;
+  font-size: small;
+}
+
+.leftcontainer {
+  color: darkblue;
+  align-items: top;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.rightcontainer {
+  margin-top: 20px;
+}
+
+.calendar {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: darkblue;
+}
+
+.calendar thead th {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.calendar tbody td {
+  border: 1px solid gainsboro;
+  padding: 3px;
+  text-align: top;
+  width: 10px;
+  height: 10px;
+}
+
+.today {
+  background-color: #f0f0f0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header h6 {
+  color: darkblue;
+  font-weight: 900;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.calendarbutton, .calendarbutton:hover {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.listitems {
+  background-color: lavender;
+  height: 350px;
+  padding: 0px !important;
+  margin-top: 10px !important;
+}
+
+.leftsearchbox {
+  padding: 20px;
+}
+
+.paging {
+  position: relative;
+  color: darkblue;
+  font-weight: 500;
+  right: 10px;
+  bottom: 0;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 50px; /* Adjust as needed */
+  background-color: white; /* Adjust as needed */
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.input-group-text {
+  color: darkblue !important;
+}
+
+.crossbuttons, .crossbuttons:hover {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: small;
+}
+
+.input-group-search .form-control-search {
+  padding-left: 80px; /* Adjust as needed */
+}
+
+.input-group-search .input-group-append {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.statuscontainer {
+  padding: 10px;
+}
+
+/* Added new style for centering content */
+.containerl {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+

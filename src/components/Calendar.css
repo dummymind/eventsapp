@@ -1,0 +1,27 @@
+/* Calendar.css */
+.calendar {
+    margin: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.today {
+    background-color: #f0f8ff;
+}
+
+.highlight {
+    background-color: green !important;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}

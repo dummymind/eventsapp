@@ -1,0 +1,26 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.vs
+TouchMars.Api\obj
+TouchMars.Api\bin
+TouchMars.Domain\obj
+TouchMars.Domain\bin
+TouchMars.Infrastructure\obj
+TouchMars.Services\obj
+node_modules
+/TouchMars.Api/bin/Debug/net8.0
+/TouchMars.Domain/bin/Debug/net8.0
+/TouchMars.Infrastructure/obj
+/TouchMars.Services/bin/Debug/net8.0
+/TouchMars.Domain/obj
+/TouchMars.Api/obj
+/TouchMars.Infrastructure/bin/Debug/net8.0
+/TouchMars.Services/obj
+/TouchMars.Api/bin/Release/net8.0
+/TouchMars.Domain/bin/Release/net8.0
+/TouchMars.Api/Properties/PublishProfiles
+/TouchMars.Infrastructure/bin/Release/net8.0
+/TouchMars.Services/bin/Release/net8.0

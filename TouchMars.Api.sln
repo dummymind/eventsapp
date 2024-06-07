@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouchMars.Api", "TouchMars.Api\TouchMars.Api.csproj", "{54797245-D0A1-4753-9BD2-19E70A377F99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TouchMars.Domain", "TouchMars.Domain\TouchMars.Domain.csproj", "{7641926B-D241-4622-9ED4-DF64DB1FB26F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchMars.Infrastructure", "TouchMars.Infrastructure\TouchMars.Infrastructure.csproj", "{EA08E4ED-571A-4B19-8427-B323AB383EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TouchMars.Services", "TouchMars.Services\TouchMars.Services.csproj", "{D28DBEF6-8925-46EA-BF59-E07AA8637A38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54797245-D0A1-4753-9BD2-19E70A377F99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54797245-D0A1-4753-9BD2-19E70A377F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54797245-D0A1-4753-9BD2-19E70A377F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54797245-D0A1-4753-9BD2-19E70A377F99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7641926B-D241-4622-9ED4-DF64DB1FB26F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7641926B-D241-4622-9ED4-DF64DB1FB26F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7641926B-D241-4622-9ED4-DF64DB1FB26F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7641926B-D241-4622-9ED4-DF64DB1FB26F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA08E4ED-571A-4B19-8427-B323AB383EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA08E4ED-571A-4B19-8427-B323AB383EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA08E4ED-571A-4B19-8427-B323AB383EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA08E4ED-571A-4B19-8427-B323AB383EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D28DBEF6-8925-46EA-BF59-E07AA8637A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D28DBEF6-8925-46EA-BF59-E07AA8637A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D28DBEF6-8925-46EA-BF59-E07AA8637A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D28DBEF6-8925-46EA-BF59-E07AA8637A38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8297C85-2EE5-4380-82FC-19295B1E499B}
+	EndGlobalSection
+EndGlobal

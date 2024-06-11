@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import calendaricon from '../../images/vector_x2.svg'
 import capture_decran from '../../images/capture_decran_20240315_a_11124.png'
-import './Schedule.module.css'
+
 
 
 
@@ -110,7 +110,7 @@ function Schedule()
                 <div className="col-md-9">
                 
 
-                <>
+
   <div className=" bg-light rounded my-4 p-4 mt-3 visit-summary">
     <div className="custon-visit visit-title">Visit Summary</div>
     <div className="visit-content">
@@ -310,7 +310,6 @@ function Schedule()
       </li>
     </ul>
   </div>
-</>
 
 
 

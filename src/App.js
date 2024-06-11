@@ -8,6 +8,8 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Event from './components/ResponsiveEvent.jsx/Event';
 import Guests from './components/ResponsiveEvent.jsx/Guests'
+import Summary from './components/ResponsiveEvent.jsx/Summary';
+import History from './components/ResponsiveEvent.jsx/History';
 
 import Schedule from './components/ResponsiveEvent.jsx/Schedule';
 
@@ -66,6 +68,8 @@ function App() {
           <Route path="/event" element={<Event />} />
           <Route path="/guests" element={<Guests />} />
           <Route path="/schedule" element={<Schedule />} />
+          <Route path="/summary" element={<Summary />} />
+          <Route path="/history" element={<History />} />
         </Routes>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></script>

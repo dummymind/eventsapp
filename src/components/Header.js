@@ -20,7 +20,7 @@ function Header() {
                         <img src={Logo} alt="Logo" width="100" height="35" className="d-inline-block align-text-top" />
                     </a>
                     {/* <button type="button" className="buttonrequest btn btn-success ml-2">CREATE A NEW REQUEST</button> */}
-                    <Link to="/event" className="buttonrequest btn btn-success ml-2">CREATE A NEW REQUEST</Link>
+                    <Link to="/schedule" className="buttonrequest btn btn-success ml-2">CREATE A NEW REQUEST</Link>
                 </div>
 
                 <form className="d-flex">

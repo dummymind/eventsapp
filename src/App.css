@@ -70,7 +70,7 @@
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 30px!important;
+  margin-left: 10px!important;
 }
 
 .rightcontainer {
@@ -214,10 +214,17 @@
 }
 
 .card-header-custom{
-  color:darkblue;
+  color:darkblue !important;
   text-transform: uppercase;
-  font-weight: 1000;
-  font-size: small;
+  font-weight: 1000 !important;
+  font-size: small !important;
+}
+
+.card-header-custom2{
+  color:darkblue !important;
+  text-transform: uppercase;
+  font-weight: 800 !important;
+  font-size: .7rem !important;
 }
 
 .card-body-custom{
@@ -225,6 +232,7 @@
   
 }
 .card-text-custom{
+  color:darkblue !important;
 
 }
 
@@ -853,7 +861,7 @@
 }
 
 .circle7 {
-  background-color: orange !important;
+  background-color: #FFBF00 !important;
   border: #000 1px solid;
   width: 1.2rem;
   height: 1.2rem;

@@ -14,8 +14,8 @@ export default function FutureEvents() {
       <img src={rectangelimage} className="img-fluid rounded-start" alt="..." />
     </div>
     <div className="col-md-8">
-      <div className="card-body pt-3 p-2">
-        <h6 className="card-header-custom card-title">ANIVERSARY OF FERGUSON'S OFFICE</h6>
+      <div className="card-body  p-2">
+        <h6 className="card-header-custom2 card-title">ANIVERSARY OF FERGUSON'S OFFICE</h6>
         <p className="card-text-custom card-text">
           Event Date Tie Club Event location
         </p>
@@ -32,8 +32,8 @@ export default function FutureEvents() {
       <img src={rectangelimage} className="img-fluid rounded-start" alt="..." />
     </div>
     <div className="col-md-8">
-      <div className="card-body pt-3 p-2">
-        <h6 className="card-header-custom card-title">ANIVERSARY OF FERGUSON'S OFFICE</h6>
+      <div className="card-body p-2">
+        <h6 className="card-header-custom2 card-title">ANIVERSARY OF FERGUSON'S OFFICE</h6>
         <p className="card-text-custom card-text">
           Event Date Tie Club Event location
         </p>
@@ -50,8 +50,8 @@ export default function FutureEvents() {
       <img src={rectangelimage} className="img-fluid rounded-start" alt="..." />
     </div>
     <div className="col-md-8">
-      <div className="card-body pt-3 p-2">
-        <h6 className="card-header-custom card-title">ANIVERSARY OF FERGUSON'S OFFICE</h6>
+      <div className="card-body p-2">
+        <h6 className="card-header-custom2 card-title">ANIVERSARY OF FERGUSON'S OFFICE</h6>
         <p className="card-text-custom card-text">
           Event Date Tie Club Event location
         </p>

@@ -11,17 +11,17 @@ export default function Vip(){
 <div className="row">
   <div className="col-md-3 m-3 mt-5 mb-4 bg-light rounded ">
     <div className="p-2 text-blue bg-light">
-      <div className="font-700" style={{ fontSize: 20 }}>
+      <div className="font-700" style={{ fontSize: 18 }}>
         <span style={{ color: "rgba(0, 215, 185, 1)" }}>Welcome</span>
         <br />
         Frank Mars
       </div>
-      <div className="mt-4 font-800 text-uppercase" style={{ fontSize: 14 }}>
+      <div className="mt-2 font-800 text-uppercase" style={{ fontSize: 12 }}>
         my points of interests
       </div>
       <div
         className="mt-2 d-flex flex-column text-blue2"
-        style={{ fontSize: 12 }}
+        style={{ fontSize: 11 }}
       >
         <div className="align-items-center mb-2 ">
         <input
@@ -66,10 +66,10 @@ export default function Vip(){
           </span>
         </div>
       </div>
-      <div className="mt-4 font-800 text-uppercase" style={{ fontSize: 14 }}>
+      <div className="mt-2 font-800 text-uppercase" style={{ fontSize: 14 }}>
         unvisited sites
       </div>
-      <div className="mt-2 text-blue2" style={{ fontSize: 12 }}>
+      <div className="mt-2 text-blue2" style={{ fontSize: 11 }}>
         Show all unvisited sites since
       </div>
       <div
@@ -87,11 +87,31 @@ export default function Vip(){
     </div>
   </div>
   <div className="col-md-8 mt-5 mb-4 rounded">
-      <img
+      {/* <img
         src={map}
         className="img-fluid"
-      />
+      /> */}
    
+   <div className="image-container">
+  <img src={map} className="img-fluid" />
+  <div className="circle circle1" >1</div>
+  <div className="circle circle2" >2</div>
+  <div className="circle circle3" >3</div>
+  <div className="circle circle4" />
+  <div className="circle circle5" />
+  <div className="circle circle6" />
+  <div className="circle circle7" />
+
+  <div class="zoom-buttons">
+        <button class=" " id="zoom-in">+</button>
+        <button class=" " id="zoom-out">-</button>
+      </div>
+<select className="dropdown-top-right rounded-pill form-select rounded form-select">
+                                    <option selected>North America</option>
+                                    <option value="older">Older</option>
+                                </select>
+      
+</div>
      </div>
 </div>
 

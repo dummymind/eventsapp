@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import LeftContainer from './components/LeftContainer';
 import RightContainer from './components/RightContainer';
+import Vip from './components/Vip';
 import Header from './components/Header';
 import Main from './components/Main';
 import Event from './components/ResponsiveEvent.jsx/Event';
@@ -70,6 +71,7 @@ function App() {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/summary" element={<Summary />} />
           <Route path="/history" element={<History />} />
+          <Route path="/vip" element={<Vip />} />
         </Routes>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></script>

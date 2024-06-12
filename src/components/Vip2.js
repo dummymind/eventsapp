@@ -3,7 +3,7 @@ import React from 'react';
 import map from '../images/map.png';
 import LeftContainer from './forfrontend/LeftContainer2';
 import RightContainer from './forfrontend/RightContainer2';
-export default function Vip(){
+export default function Vip2(){
 
     return (
       <div className="container-fluid">
@@ -16,12 +16,29 @@ export default function Vip(){
         <br />
         Frank Mars
       </div>
+                       
+                            <div className="input-group mt-2">
+                                <label htmlFor="searchInput" className="p-0 font-700 input-group-text-custom-search  input-group-text input-group-text-custom" >Search</label>
+                                <input type="text" className="form-control-custom-search form-control-custom rounded form-control" id="searchInput" placeholder="Type a keyword" />
+                            </div>
+                       
+      
+
+
       <div className="mt-3 font-800 text-uppercase" style={{ fontSize: 14 }}>
-        my points of interests
+        FILTERS
+      </div>
+      <div className='input-group'>
+      <label htmlFor="searchInput" className="p-0 font-700 input-group-text-custom-search  input-group-text input-group-text-custom" >Select Region</label> 
+       <select className="custom-select-form custom-select2 rounded-pill form-select rounded form-select">
+                                    <option selected>North America</option>
+                                    <option value="older">Older</option>
+                                </select>
+                               
       </div>
       <div
         className="mt-2 d-flex flex-column text-blue2"
-        style={{ fontSize: 11 }}
+        style={{ fontSize: 12 }}
       >
         <div className="align-items-center mb-2 ">
         <input
@@ -31,7 +48,7 @@ export default function Vip(){
   id="flexCheckDefault"
   defaultChecked="checked"
 />
-          <span className=" font-mars-centra">Show/Hide all points</span>
+          <span className=" font-mars-centra">My Events</span>
         </div>
         <div className="d-flex align-items-center mb-2">
         <input
@@ -41,7 +58,7 @@ export default function Vip(){
   id="flexCheckDefault"
   defaultChecked="checked"
 />
-          <span className="ml-2 font-mars-centra">Pending for validation</span>
+          <span className="ml-2 font-mars-centra">Other Family Events</span>
         </div>
         <div className="d-flex align-items-center mb-2">
         <input
@@ -51,7 +68,7 @@ export default function Vip(){
   id="flexCheckDefault"
   defaultChecked="checked"
 />
-          <span className="ml-2 font-mars-centra">Upcoming events</span>
+          <span className="ml-2 font-mars-centra">Needs family members</span>
         </div>
         <div className="d-flex align-items-center mb-2">
         <input
@@ -62,28 +79,23 @@ export default function Vip(){
   defaultChecked="checked"
 />
           <span className="ml-2 font-mars-centra">
-            Events with new comments
+          Suggested Visits
           </span>
         </div>
       </div>
-      <div className="mt-2 font-800 text-uppercase" style={{ fontSize: 14 }}>
-        unvisited sites
-      </div>
-      <div className="mt-2 text-blue2" style={{ fontSize: 12 }}>
-        Show all unvisited sites since
-      </div>
-      <div
-        className="d-flex justify-content-between p-1 mt-2 text-secondary"
-        style={{ fontSize: 9 }}
-      >
-        <select className="custom-select rounded-pill form-select rounded form-select">
-                                    <option selected>Select</option>
+      
+      <div className='input-group'>
+      <label htmlFor="searchInput" className="p-0 font-700 input-group-text-custom-search  input-group-text input-group-text-custom" >Select date interval</label> 
+       <select className="custom-select-form custom-select2 rounded-pill form-select rounded form-select">
+                                    <option selected>2014 to 2024 </option>
                                     <option value="older">Older</option>
                                 </select>
+                               
       </div>
       
-        
-      <button type="button" className="buttonrequest btn btn-success mt-2 ml-2">View suggested visit</button>
+        <div className='mt-3 text-center'>
+      <button type="button" className="col-6 buttonrequest btn btn-success mt-2 ml-2">View suggested visit</button>
+      </div>
     </div>
   </div>
   <div className="col-md-9 mt-5 mb-3 rounded">

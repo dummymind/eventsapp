@@ -704,7 +704,14 @@
       padding: 10px !important;
       }
 
-      .custom-select
+      .custom-select2
+{
+  font-size: smaller !important;
+  border-color: aquamarine !important;
+  /* width: 70% !important; */
+}
+
+.custom-select
 {
   font-size: smaller !important;
   border-color: aquamarine !important;
@@ -895,3 +902,28 @@
   width: 30% !important;
   border: #00D7B8 1px solid !important;
 }
+
+
+.form-control-custom-search {
+  background-image: url('./images/search.png');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px 20px; 
+  padding-right: 60px !important; /* Adjust based on the image size */
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  font-size: small;
+  margin-left: 10px !important;
+  font-weight: 600 !important;
+  color:darkblue !important;
+}
+
+.custom-select-form
+{
+  margin-left: 5px !important;
+  color:darkblue !important;
+  font-weight: 600 !important;
+  font-size: smaller !important;
+}
+

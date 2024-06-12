@@ -16,6 +16,9 @@ export default function Vip(){
         <br />
         Frank Mars
       </div>
+
+
+      
       <div className="mt-3 font-800 text-uppercase" style={{ fontSize: 14 }}>
         my points of interests
       </div>

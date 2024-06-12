@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import calendaricon from '../../images/vector_x2.svg'
 import capture_decran from '../../images/capture_decran_20240315_a_11124.png'
 
-function Guests()
+
+
+
+function Schedule()
 {
 
 
@@ -105,9 +108,9 @@ function Guests()
                 </div>
     
                 <div className="col-md-9">
-              
-
                 
+
+
   <div className=" bg-light rounded my-4 p-4 mt-3 visit-summary">
     <div className="visit-title">Visit Summary</div>
     <div className="visit-content">
@@ -210,16 +213,16 @@ function Guests()
     <label htmlFor="staticEmail" className="custom-font col-form-label">
       BRIEF
     </label>
-    <div className="m-3">
+    <div className="m-2">
       <button
         type="button"
-        className="btn-custom-schedule btn "
+        className="btn-custom-schedule btn btn-outline-danger"
       >
         DOWNLOAD THIS BRIEF FILE
       </button>
       <button
         type="button"
-        className="btn-custom-schedule btn "
+        className="btn-custom-schedule btn btn-outline-danger"
       >
         UPLOAD THIS BRIEF FILE
       </button>
@@ -230,22 +233,22 @@ function Guests()
         DELETE THIS BREIF FILE
       </button>
     </div>
-    <div className="card-group">
-      <div className="card m-2 rounded">
+    <div className="card-deck">
+      <div className="card">
         <img
           className="card-img-top"
           src={capture_decran}
           alt="Card image cap"
         />
       </div>
-      <div className="card m-2 rounded">
+      <div className="card">
         <img
           className="card-img-top"
           src={capture_decran}
           alt="Card image cap"
         />
       </div>
-      <div className="card m-2 rounded">
+      <div className="card">
         <img
           className="card-img-top"
           src={capture_decran}
@@ -310,8 +313,6 @@ function Guests()
 
 
 
-
-
                 </div>
 
 
@@ -328,4 +329,4 @@ function Guests()
 
     }
 
-export default Guests;
+export default Schedule;

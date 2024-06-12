@@ -1,9 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 // import '../vip.module.css'
 import map from '../images/map.png';
 import LeftContainer from './forfrontend/LeftContainer2';
 import RightContainer from './forfrontend/RightContainer2';
+import ListModal from './ListModal';
 export default function Vip2(){
+
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => setShowModal(!showModal);
 
     return (
       <div className="container-fluid">
@@ -40,7 +46,7 @@ export default function Vip2(){
         className="mt-2 d-flex flex-column text-blue2"
         style={{ fontSize: 12 }}
       >
-        <div className="align-items-center mb-2 ">
+        <div className="align-items-center mb-2 d-flex ">
         <input
   className="form-check-input-custom2 form-check-input"
   type="checkbox"
@@ -48,7 +54,11 @@ export default function Vip2(){
   id="flexCheckDefault"
   defaultChecked="checked"
 />
-          <span className=" font-mars-centra">My Events</span>
+          <span className=" font-mars-centra">My Events </span>
+          <div class="circle-container ms-auto">
+      <span class="circle8"></span>
+    </div>
+  
         </div>
         <div className="d-flex align-items-center mb-2">
         <input
@@ -59,6 +69,9 @@ export default function Vip2(){
   defaultChecked="checked"
 />
           <span className="ml-2 font-mars-centra">Other Family Events</span>
+          <div class="circle-container ms-auto">
+      <span class="circle9"></span>
+    </div>
         </div>
         <div className="d-flex align-items-center mb-2">
         <input
@@ -69,6 +82,9 @@ export default function Vip2(){
   defaultChecked="checked"
 />
           <span className="ml-2 font-mars-centra">Needs family members</span>
+          <div class="circle-container ms-auto">
+      <span class="circle10"></span>
+    </div>
         </div>
         <div className="d-flex align-items-center mb-2">
         <input
@@ -81,6 +97,9 @@ export default function Vip2(){
           <span className="ml-2 font-mars-centra">
           Suggested Visits
           </span>
+          <div class="circle-container ms-auto">
+      <span class="circle11"></span>
+    </div>
         </div>
       </div>
       
@@ -94,7 +113,7 @@ export default function Vip2(){
       </div>
       
         <div className='mt-3 text-center'>
-      <button type="button" className="col-6 buttonrequest btn btn-success mt-2 ml-2">View suggested visit</button>
+      <button onClick={toggleModal} type="button" className="col-6 buttonrequest btn btn-success mt-2 ml-2">View suggested visit</button>
       </div>
     </div>
   </div>
@@ -140,7 +159,7 @@ export default function Vip2(){
           </div>
         </div>
 
-
+        <ListModal showModal={showModal} toggleModal={toggleModal}/>
 </div>
 
     )

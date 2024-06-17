@@ -28,6 +28,9 @@
 
 .custom-table-font-header{
     color: darkblue !important;
+    font-size: large !important;
+    font-weight: 800;
+
 }
 
 .custom-row
@@ -35,6 +38,13 @@
     padding: 20px;
 }
 
+.custom-table-tr{
+    color:darkblue !important;
+    font-weight: 600; 
+}
+.listitemsadmin{
+    height: auto !important;
+}
 
 .nav-item-custom.active{
 
@@ -62,4 +72,8 @@
 .nav-item-custom.active:hover::after,
 .nav-item-custom.active:focus::after {
     transform: scaleX(1);
+}
+
+.row-content {
+    display: flex;
 }

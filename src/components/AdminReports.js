@@ -77,46 +77,67 @@ function AdminReports() {
   </span>
 </div>
     </div>
-    <div class="listitems p-5">
+    <div class="listitemsadmin listitems p-3">
 
-    <table className="table">
-  <thead>
-    <tr class="p-5 m-5">
-      <th scope="col" className='custom-table-font-header'>FIRST NAME</th>
-      <th scope="col" className='custom-table-font-header'>LAST NAME</th>
-      <th scope="col" className='custom-table-font-header'>E-MAIL</th>
-      <th scope="col" className='custom-table-font-header'>TITLE</th>
-      <th scope="col" className='custom-table-font-header'>LOCATION</th>
-      <th scope="col" className='custom-table-font-header'>PROFILE</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colSpan={2}>Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-
+        <div className='row custom-table-font-header bg-light p-3 rounded m-3'>
+            <div className='col-2'>FIRST NAME</div>
+            <div className='col-2'>LAST NAME</div>
+            <div className='col-2'>E-MAIL</div>
+            <div className='col-2'>TITLE</div>
+            <div className='col-2'>LOCATION</div>
+            <div className='col-2'>PROFILE</div>
 
     </div>
     
+
+
+    <div className='row custom-table-tr bg-light p-3 rounded m-3'>
+            <div className='col-2'>Gina</div>
+            <div className='col-2'>CALLEO</div>
+            <div className='col-2'>johndeo@effem.com</div>
+            <div className='col-2'>Current Job Position</div>
+            <div className='col-2'>United States of America</div>
+            <div className='col-2'>Admin</div>
+
+    </div>
+
+
+    <div className='row custom-table-tr bg-light p-3 rounded m-3'>
+            <div className='col-2'>Gina</div>
+            <div className='col-2'>CALLEO</div>
+            <div className='col-2'>johndeo@effem.com</div>
+            <div className='col-2'>Current Job Position</div>
+            <div className='col-2'>United States of America</div>
+            <div className='col-2'>Admin</div>
+
+    </div>
+
+
+    <div className='row custom-table-tr bg-light p-3 rounded m-3'>
+            <div className='col-2'>Gina</div>
+            <div className='col-2'>CALLEO</div>
+            <div className='col-2'>johndeo@effem.com</div>
+            <div className='col-2'>Current Job Position</div>
+            <div className='col-2'>United States of America</div>
+            <div className='col-2'>Admin</div>
+
+    </div>
+
+
+
+
+    </div>
+
+   
+<div className=" paging align-items-center">
+                <span className="centered-text">1-1 OF 1 ELEMENTS</span>
+            </div>
+       
+
     </div>
 
 </div>
+
 </div>
 
         </>

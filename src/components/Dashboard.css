@@ -1,0 +1,1654 @@
+.div {
+    background-color: var(--Secondary-Blue4, #f5f5fb);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 48px 47px;
+  }
+  @media (max-width: 991px) {
+    .div {
+      padding: 0 20px;
+    }
+  }
+  .div-2 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 28px;
+    width: 100%;
+    gap: 20px;
+    padding: 0 1px;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  .div-3 {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-4 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .div-5 {
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--Radius, 8px);
+    background-color: var(--0_Green, #00d7b9);
+    display: flex;
+    padding: 10px 14px;
+  }
+  .img {
+    aspect-ratio: 0.94;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+  }
+  .div-6 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: var(--0_Blue, #0000a0);
+    font-weight: 800;
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin: auto 0;
+  }
+  @media (max-width: 991px) {
+    .div-6 {
+      white-space: initial;
+    }
+  }
+  .div-7 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-8 {
+    background-color: var(--0_Green, #00d7b9);
+    margin-top: 4px;
+    height: 2px;
+  }
+  .div-9 {
+    align-self: stretch;
+    padding-bottom: 6px;
+    color: var(--Secondary-Blue50, #8080cf);
+    white-space: nowrap;
+    text-transform: uppercase;
+    margin: auto 0;
+    font: 800 14px Mars Centra, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-9 {
+      white-space: initial;
+    }
+  }
+  .div-10 {
+    align-self: stretch;
+    padding-bottom: 6px;
+    color: var(--Secondary-Blue50, #8080cf);
+    text-transform: uppercase;
+    margin: auto 0;
+    font: 800 14px Mars Centra, sans-serif;
+  }
+  .div-11 {
+    align-self: stretch;
+    padding-bottom: 6px;
+    color: var(--Secondary-Blue50, #8080cf);
+    text-transform: uppercase;
+    margin: auto 0;
+    font: 800 14px Mars Centra, sans-serif;
+  }
+  .div-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 9px 0;
+  }
+  .div-13 {
+    display: flex;
+    gap: 6px;
+  }
+  .div-14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .div-15 {
+    border-radius: 22.667px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 1px 0;
+  }
+  .div-16 {
+    background-color: var(--0_Blue, #0000a0);
+    border-radius: 50%;
+    height: 17px;
+  }
+  .div-17 {
+    color: var(--0_Blue, #0000a0);
+    font: 700 12px Mars Centra, sans-serif;
+  }
+  .div-18 {
+    border-radius: var(--Radius, 8px);
+    border-color: rgba(229, 229, 245, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--White, #fff);
+    display: flex;
+    margin-top: 12px;
+    flex-direction: column;
+    color: var(--0_Blue, #0000a0);
+    padding: 12px 24px;
+  }
+  @media (max-width: 991px) {
+    .div-18 {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .div-19 {
+    white-space: nowrap;
+    justify-content: center;
+    font: 700 20px Mars Centra, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-19 {
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+  .div-20 {
+    justify-content: end;
+    display: flex;
+    margin-top: 16px;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-20 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-21 {
+    display: flex;
+    gap: 12px;
+    white-space: nowrap;
+    flex: 1;
+  }
+  @media (max-width: 991px) {
+    .div-21 {
+      white-space: initial;
+    }
+  }
+  .div-22 {
+    text-transform: uppercase;
+    margin: auto 0;
+    font: 800 11px Mars Centra, sans-serif;
+  }
+  .div-23 {
+    justify-content: space-between;
+    border-radius: var(--Radius, 8px);
+    background-color: var(--Secondary-Blue4, #f5f5fb);
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    flex: 1;
+    padding: 12px;
+    border:none;
+  }
+  @media (max-width: 991px) {
+    .div-23 {
+      white-space: initial;
+    }
+  }
+  .div-24 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .img-2 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+  }
+  .div-25 {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+  }
+  .div-26 {
+    text-transform: uppercase;
+    margin: auto 0;
+    font: 800 11px Mars Centra, sans-serif;
+  }
+  .div-27 {
+    justify-content: space-between;
+    border-radius: var(--Radius, 8px);
+    background-color: var(--Secondary-Blue4, #f5f5fb);
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    flex: 1;
+    padding: 12px;
+  }
+  @media (max-width: 991px) {
+    .div-27 {
+      white-space: initial;
+    }
+  }
+  .div-28 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .img-3 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+  }
+  .div-29 {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+  }
+  .div-30 {
+    text-transform: uppercase;
+    margin: auto 0;
+    font: 800 11px Mars Centra, sans-serif;
+  }
+  .div-31 {
+    justify-content: space-between;
+    border-radius: var(--Radius, 8px);
+    background-color: var(--Secondary-Blue4, #f5f5fb);
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    flex: 1;
+    padding: 12px;
+  }
+  @media (max-width: 991px) {
+    .div-31 {
+      white-space: initial;
+    }
+  }
+  .div-32 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .img-4 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+  }
+  .div-33 {
+    display: flex;
+    gap: 12px;
+    white-space: nowrap;
+    flex: 1;
+  }
+  @media (max-width: 991px) {
+    .div-33 {
+      white-space: initial;
+    }
+  }
+  .div-34 {
+    text-transform: uppercase;
+    margin: auto 0;
+    font: 800 11px Mars Centra, sans-serif;
+  }
+  .div-35 {
+    justify-content: space-between;
+    border-radius: var(--Radius, 8px);
+    background-color: var(--Secondary-Blue4, #f5f5fb);
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    flex: 1;
+    padding: 12px;
+  }
+  @media (max-width: 991px) {
+    .div-35 {
+      white-space: initial;
+    }
+  }
+  .div-36 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .img-5 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+  }
+  .div-37 {
+    display: flex;
+    gap: 12px;
+  }
+  .div-38 {
+    text-transform: uppercase;
+    margin: auto 0;
+    font: 800 11px Mars Centra, sans-serif;
+  }
+  .div-39 {
+    justify-content: space-between;
+    border-radius: var(--Radius, 8px);
+    background-color: var(--Secondary-Blue4, #f5f5fb);
+    display: flex;
+    gap: 11px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 12px;
+    border:none;
+  }
+  .div-40 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .img-6 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+  }
+  .div-41 {
+    margin-top: 24px;
+  }
+  @media (max-width: 991px) {
+    .div-41 {
+      max-width: 100%;
+    }
+  }
+  .div-42 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-42 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 24%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .div-43 {
+    border-radius: var(--Radius, 8px);
+    border-color: rgba(229, 229, 245, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--White, #fff);
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    color: var(--0_Blue, #0000a0);
+    margin: 0 auto;
+    padding: 24px;
+  }
+  @media (max-width: 991px) {
+    .div-43 {
+      margin-top: 31px;
+      padding: 0 20px;
+    }
+  }
+  .div-44 {
+    display: flex;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .img-7 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 32px;
+  }
+  .div-45 {
+    font-family: Mars Centra, sans-serif;
+    margin: auto 0;
+  }
+  .div-46 {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .div-47 {
+    display: flex;
+    gap: 16px;
+  }
+  .img-8 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+  }
+  .div-48 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-49 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 700;
+  }
+  .div-50 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 400;
+  }
+  .div-51 {
+    display: flex;
+    margin-top: 8px;
+    gap: 16px;
+  }
+  .img-9 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+  }
+  .div-52 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-53 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 700;
+  }
+  .div-54 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 400;
+  }
+  .div-55 {
+    display: flex;
+    margin-top: 8px;
+    gap: 16px;
+  }
+  .img-10 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+  }
+  .div-56 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-57 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 700;
+  }
+  .div-58 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 400;
+  }
+  .div-59 {
+    display: flex;
+    margin-top: 8px;
+    gap: 16px;
+  }
+  .img-11 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+  }
+  .div-60 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-61 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 700;
+  }
+  .div-62 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 400;
+  }
+  .div-63 {
+    display: flex;
+    margin-top: 8px;
+    gap: 16px;
+  }
+  .img-12 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+  }
+  .div-64 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-65 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 700;
+  }
+  .div-66 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 400;
+  }
+  .div-67 {
+    display: flex;
+    margin-top: 8px;
+    gap: 16px;
+  }
+  .img-13 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+  }
+  .div-68 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-69 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 700;
+  }
+  .div-70 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 400;
+  }
+  .div-71 {
+    display: flex;
+    margin-top: 8px;
+    gap: 16px;
+  }
+  .img-14 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+  }
+  .div-72 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-73 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 700;
+  }
+  .div-74 {
+    font-family: Mars Centra, sans-serif;
+    font-weight: 400;
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 76%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-2 {
+      width: 100%;
+    }
+  }
+  .div-75 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    min-height: 572px;
+    flex-grow: 1;
+    align-items: end;
+    padding: 80px 0 4px 80px;
+  }
+  @media (max-width: 991px) {
+    .div-75 {
+      max-width: 100%;
+      margin-top: 31px;
+    }
+  }
+  .img-15 {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .div-76 {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 20px;
+    margin: 72px 256px 0 0;
+  }
+  @media (max-width: 991px) {
+    .div-76 {
+      margin: 40px 10px 0 0;
+    }
+  }
+  .div-77 {
+    display: flex;
+    flex-direction: column;
+  }
+  .div-78 {
+    display: flex;
+    gap: 20px;
+  }
+  .div-79 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .div-80 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-81 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .div-82 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-83 {
+    align-self: center;
+    display: flex;
+    margin-top: 7px;
+    align-items: start;
+    gap: 7px;
+  }
+  .div-84 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .div-85 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-86 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .div-87 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-88 {
+    align-self: end;
+    display: flex;
+    margin-top: 27px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .div-89 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-90 {
+    position: relative;
+    display: flex;
+    margin-top: -42px;
+    width: 883px;
+    max-width: 100%;
+    padding-bottom: 72px;
+    flex-direction: column;
+  }
+  .div-91 {
+    display: flex;
+    width: 57px;
+    flex-direction: column;
+  }
+  .div-92 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  @media (max-width: 991px) {
+    .div-92 {
+      padding-right: 20px;
+    }
+  }
+  .div-93 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-94 {
+    align-self: end;
+    display: flex;
+    margin-top: 80px;
+    width: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (max-width: 991px) {
+    .div-94 {
+      margin-top: 40px;
+    }
+  }
+  .div-95 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 100%;
+    height: 20px;
+  }
+  .div-96 {
+    z-index: 10;
+    display: flex;
+    width: 91px;
+    flex-direction: column;
+    margin: -33px 0 0 139px;
+  }
+  @media (max-width: 991px) {
+    .div-96 {
+      margin-left: 10px;
+    }
+  }
+  .div-97 {
+    display: flex;
+    margin-left: 16px;
+    width: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (max-width: 991px) {
+    .div-97 {
+      margin-left: 10px;
+    }
+  }
+  .div-98 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 100%;
+    height: 20px;
+  }
+  .div-99 {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+  }
+  .div-100 {
+    display: flex;
+    margin-top: 12px;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .div-101 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-102 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .div-103 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-104 {
+    align-self: end;
+    z-index: 10;
+    display: flex;
+    margin-top: 47px;
+    width: 149px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-104 {
+      margin-top: 40px;
+    }
+  }
+  .div-105 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  @media (max-width: 991px) {
+    .div-105 {
+      padding-right: 20px;
+    }
+  }
+  .div-106 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .div-107 {
+    align-self: end;
+    display: flex;
+    margin-top: 144px;
+    width: 26px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-107 {
+      margin-top: 40px;
+    }
+  }
+  .div-108 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.222px;
+    border-color: rgba(229, 229, 245, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--Secondary-Blue4, #f5f5fb);
+    display: flex;
+    width: 100%;
+    height: 26px;
+    padding: 0 4px;
+  }
+  .img-16 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  .div-109 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.222px;
+    border-color: rgba(229, 229, 245, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--Secondary-Blue4, #f5f5fb);
+    display: flex;
+    margin-top: 4px;
+    width: 100%;
+    height: 26px;
+    padding: 0 4px;
+  }
+  .img-17 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+  }
+  .div-110 {
+    align-self: center;
+    display: flex;
+    margin-top: -92px;
+    width: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .div-111 {
+    stroke-width: 2px;
+    border-color: rgba(0, 0, 160, 1);
+    border-style: solid;
+    border-width: 2px;
+    background-color: var(--white, #fff);
+    border-radius: 50%;
+    width: 100%;
+    height: 20px;
+  }
+  .div-112 {
+    display: flex;
+    margin-top: 24px;
+    gap: 20px;
+    color: var(--0_Blue, #0000a0);
+  }
+  @media (max-width: 991px) {
+    .div-112 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-113 {
+    align-items: start;
+    border-radius: var(--Radius, 8px);
+    border-color: rgba(229, 229, 245, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--White, #fff);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+  @media (max-width: 991px) {
+    .div-113 {
+      padding: 0 20px;
+    }
+  }
+  .div-114 {
+    text-transform: uppercase;
+    justify-content: center;
+    font: 800 11px Mars Centra, sans-serif;
+  }
+  .div-115 {
+    margin-top: 8px;
+    font: 700 20px Mars Centra, sans-serif;
+  }
+  .div-116 {
+    align-items: start;
+    border-radius: var(--Radius, 8px);
+    border-color: rgba(229, 229, 245, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--White, #fff);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+  @media (max-width: 991px) {
+    .div-116 {
+      padding: 0 20px;
+    }
+  }
+  .div-117 {
+    text-transform: uppercase;
+    justify-content: center;
+    font: 800 11px Mars Centra, sans-serif;
+  }
+  .div-118 {
+    margin-top: 8px;
+    font: 700 20px Mars Centra, sans-serif;
+  }
+  .div-119 {
+    align-items: start;
+    border-radius: var(--Radius, 8px);
+    border-color: rgba(229, 229, 245, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--White, #fff);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+  @media (max-width: 991px) {
+    .div-119 {
+      padding: 0 20px;
+    }
+  }
+  .div-120 {
+    text-transform: uppercase;
+    justify-content: center;
+    font: 800 11px Mars Centra, sans-serif;
+  }
+  .div-121 {
+    margin-top: 8px;
+    font: 700 20px Mars Centra, sans-serif;
+  }
+  .div-122 {
+    border-radius: var(--Radius, 8px);
+    border-color: rgba(229, 229, 245, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--White, #fff);
+    display: flex;
+    margin-top: 24px;
+    flex-direction: column;
+    padding: 24px;
+  }
+  @media (max-width: 991px) {
+    .div-122 {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .div-123 {
+    align-items: start;
+    display: flex;
+    padding-right: 80px;
+    flex-direction: column;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  @media (max-width: 991px) {
+    .div-123 {
+      max-width: 100%;
+      padding-right: 20px;
+    }
+  }
+  .div-124 {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: var(--Secondary-Blue50, #8080cf);
+    justify-content: space-between;
+  }
+  .div-125 {
+    display: flex;
+    flex-direction: column;
+    color: var(--0_Blue, #0000a0);
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-125 {
+      white-space: initial;
+    }
+  }
+  .div-126 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-127 {
+    background-color: var(--0_Green, #00d7b9);
+    margin-top: 4px;
+    height: 2px;
+  }
+  .div-128 {
+    font-family: Mars Centra, sans-serif;
+    padding-bottom: 6px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-128 {
+      white-space: initial;
+    }
+  }
+  .div-129 {
+    font-family: Mars Centra, sans-serif;
+    padding-bottom: 6px;
+  }
+  .div-130 {
+    display: flex;
+    margin-top: 12px;
+    gap: 16px;
+  }
+  .div-131 {
+    color: var(--Secondary-Blue50, #8080cf);
+    margin: auto 0;
+    font: 11px Mars Centra, sans-serif;
+  }
+  .div-132 {
+    color: var(--0_Blue, #0000a0);
+    font: 14px Mars Centra, sans-serif;
+  }
+  .div-133 {
+    display: flex;
+    margin-top: 16px;
+    flex-direction: column;
+    font-size: 12px;
+    color: var(--0_Blue, #0000a0);
+    font-weight: 400;
+  }
+  @media (max-width: 991px) {
+    .div-133 {
+      max-width: 100%;
+    }
+  }
+  .div-134 {
+    display: flex;
+    padding-right: 80px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-134 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-135 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-136 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-136 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-137 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 990px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-138 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-139 {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-139 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-140 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-141 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-141 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-142 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 892px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-143 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-144 {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-144 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-145 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-146 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-146 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-147 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 889px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-148 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-149 {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-149 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-150 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-151 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-151 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-152 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 863px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-153 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-154 {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-154 {
+      flex-wrap: wrap;
+    }
+  }
+  .div-155 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-156 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-156 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-157 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 777px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-158 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-159 {
+    display: flex;
+    margin-top: 8px;
+    padding-right: 80px;
+    gap: 8px;
+  }
+  @media (max-width: 991px) {
+    .div-159 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-160 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-161 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-161 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-162 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 688px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-163 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-164 {
+    display: flex;
+    margin-top: 8px;
+    padding-right: 80px;
+    gap: 8px;
+  }
+  @media (max-width: 991px) {
+    .div-164 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-165 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-166 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-166 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-167 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 612px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-168 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-169 {
+    display: flex;
+    margin-top: 8px;
+    padding-right: 80px;
+    gap: 8px;
+  }
+  @media (max-width: 991px) {
+    .div-169 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-170 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-171 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-171 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-172 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 551px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-173 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-174 {
+    display: flex;
+    margin-top: 8px;
+    padding-right: 80px;
+    gap: 8px;
+  }
+  @media (max-width: 991px) {
+    .div-174 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-175 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-176 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-176 {
+      flex-wrap: wrap;
+      white-space: initial;
+    }
+  }
+  .div-177 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 426px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-178 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-179 {
+    display: flex;
+    margin-top: 8px;
+    padding-right: 80px;
+    gap: 8px;
+  }
+  @media (max-width: 991px) {
+    .div-179 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-180 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-181 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-181 {
+      white-space: initial;
+    }
+  }
+  .div-182 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 326px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-183 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-184 {
+    display: flex;
+    margin-top: 8px;
+    padding-right: 80px;
+    gap: 8px;
+  }
+  @media (max-width: 991px) {
+    .div-184 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-185 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-186 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-186 {
+      white-space: initial;
+    }
+  }
+  .div-187 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 258px;
+    max-width: 100%;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-188 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-189 {
+    display: flex;
+    margin-top: 8px;
+    padding-right: 80px;
+    gap: 8px;
+  }
+  @media (max-width: 991px) {
+    .div-189 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-190 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-191 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-191 {
+      white-space: initial;
+    }
+  }
+  .div-192 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 248px;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-193 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-194 {
+    display: flex;
+    margin-top: 8px;
+    padding-right: 80px;
+    gap: 8px;
+  }
+  @media (max-width: 991px) {
+    .div-194 {
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .div-195 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-196 {
+    display: flex;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  @media (max-width: 991px) {
+    .div-196 {
+      white-space: initial;
+    }
+  }
+  .div-197 {
+    background-color: var(--Secondary-Blue50, #8080cf);
+    width: 245px;
+    height: 12px;
+    margin: auto 0;
+  }
+  .div-198 {
+    font-family: Mars Centra, sans-serif;
+  }
+  .div-199 {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 28px;
+    width: 100%;
+    gap: 20px;
+    padding: 0 1px;
+  }
+  @media (max-width: 991px) {
+    .div-199 {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }

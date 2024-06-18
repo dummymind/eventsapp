@@ -18,6 +18,7 @@ import AdminReports from './components/AdminReports';
 
 
 import axios from 'axios';
+import Dashboard from './components/Dashboard';
 
 function App() {
   const [eventDates, setEventDates] = useState([]);
@@ -77,6 +78,7 @@ function App() {
           <Route path="/vip" element={<Vip />} />
           <Route path="/vip2" element={<Vip2 />} />
           <Route path="/adminreports" element={<AdminReports />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></script>

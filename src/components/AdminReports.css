@@ -1,6 +1,7 @@
 .navbar-custom-home{
 
     background-color: #00D7B8 !important;
+    line-height: 0px;
 }
 
 .nav-item-custom{
@@ -8,13 +9,14 @@
     color: darkblue !important;
     font-weight: 800 !important;
     opacity: 60% !important;
+    font-size: .8rem !important;
 }
 
 .large-custom-font{
 
     color: darkblue !important;
     font-weight: 700 !important;
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
     
 }
 
@@ -23,12 +25,13 @@
     padding: 50px;
     margin-right: 15px !important;
     background-color: gainsboro !important;
+    font-size: small !important;
     opacity: 40% !important;
 }
 
 .custom-table-font-header{
     color: darkblue !important;
-    font-size: large !important;
+    font-size: .8rem !important;
     font-weight: 800;
 
 }
@@ -39,8 +42,10 @@
 }
 
 .custom-table-tr{
+    background-color: transparent !important;
     color:darkblue !important;
     font-weight: 600; 
+    font-size: 0.7rem;
 }
 .listitemsadmin{
     height: auto !important;
@@ -52,7 +57,7 @@
     font-weight: 800 !important;
     opacity: 90% !important;
     position: relative;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     cursor: pointer;
 }
 
@@ -63,7 +68,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 4px;
+    height: 2px;
     background-color:#00D7B8;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
@@ -77,3 +82,11 @@
 .row-content {
     display: flex;
 }
+
+.custom-pencil{
+    background-color: none !important;
+    right:10px !important;
+    border: none !important;
+}
+
+

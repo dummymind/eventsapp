@@ -2,6 +2,7 @@ import React from 'react';
 import HomeIcon from '../images/homeicon.svg';
 import { Link } from 'react-router-dom';
 import './AdminReports.css';
+import pencil from '../images/pencil.svg';
 
 function AdminReports() {
     return (<>
@@ -19,8 +20,8 @@ function AdminReports() {
   <a className="navbar-custom-home navbar-brand rounded p-2" href="#">
     <img
       src={HomeIcon}
-      width={37}
-      height={30}
+      width={16}
+      height={17}
       className="d-inline-block align-top"
       alt=""
     />
@@ -60,11 +61,11 @@ function AdminReports() {
 
 <div className='m-2 bg-light rounded p-4'><div className="large-custom-font">User Management</div></div>
 
-<div className='mt-2 bg-light rounded p-0'>
+<div className='m-2 bg-light rounded p-0'>
     
     <div className="m-3">
 
-    <div className="input-group">
+    <div className="input-group align-items-center">
   <input
     type="text"
     className="custom-input-group form-control p-2"
@@ -77,56 +78,63 @@ function AdminReports() {
   </span>
 </div>
     </div>
-    <div class="listitemsadmin listitems p-3">
+  <div className="container-fluid listitemsadmin listitems p-3">
+  <div className="table-responsive">
+    <div className="table">
+      {/* Header Row */}
+      <div className="row custom-table-font-header bg-light p-3 rounded m-3">
+        <div className="col-12 col-md-2">FIRST NAME</div>
+        <div className="col-12 col-md-2">LAST NAME</div>
+        <div className="col-12 col-md-2">E-MAIL</div>
+        <div className="col-12 col-md-2">TITLE</div>
+        <div className="col-12 col-md-2">LOCATION</div>
+        <div className="col-12 col-md-2">PROFILE</div>
+      </div>
+     
+      {/* Data Row 1 */}
+        
+        <div className="row custom-table-tr bg-light p-3 rounded m-3 align-items-center" >
+        <div className="col-12 col-md-2">Gina</div>
+        <div className="col-12 col-md-2">CALLEO</div>
+        <div className="col-12 col-md-2">johndeo@effem.com</div>
+        <div className="col-12 col-md-2">Current Job Position</div>
+        <div className="col-12 col-md-2">United States of America</div>
+        <div className="col-12 col-md-2 d-flex justify-content-between align-items-center">
+    Admin
+    <img className="custom-pencil ml-auto" style={{ backgroundColor: 'transparent' }} src={pencil} alt="Pencil Icon" />
+  </div>
+      </div>
 
-        <div className='row custom-table-font-header bg-light p-3 rounded m-3'>
-            <div className='col-2'>FIRST NAME</div>
-            <div className='col-2'>LAST NAME</div>
-            <div className='col-2'>E-MAIL</div>
-            <div className='col-2'>TITLE</div>
-            <div className='col-2'>LOCATION</div>
-            <div className='col-2'>PROFILE</div>
-
+      {/* Data Row 2 */}
+        
+        <div className="row custom-table-tr bg-light p-3 rounded m-3 align-items-center" >
+        <div className="col-12 col-md-2">Gina</div>
+        <div className="col-12 col-md-2">CALLEO</div>
+        <div className="col-12 col-md-2">johndeo@effem.com</div>
+        <div className="col-12 col-md-2">Current Job Position</div>
+        <div className="col-12 col-md-2">United States of America</div>
+        <div className="col-12 col-md-2 d-flex justify-content-between align-items-center">
+    Admin
+    <img className="custom-pencil ml-auto" style={{ backgroundColor: 'transparent' }} src={pencil} alt="Pencil Icon" />
+  </div>
+      </div>
+      {/* Data Row 3 */}
+      <div className="row custom-table-tr bg-light p-3 rounded m-3 align-items-center" >
+        <div className="col-12 col-md-2">Gina</div>
+        <div className="col-12 col-md-2">CALLEO</div>
+        <div className="col-12 col-md-2">johndeo@effem.com</div>
+        <div className="col-12 col-md-2">Current Job Position</div>
+        <div className="col-12 col-md-2">United States of America</div>
+        <div className="col-12 col-md-2 d-flex justify-content-between align-items-center">
+    Admin
+    <img className="custom-pencil ml-auto" style={{ backgroundColor: 'transparent' }} src={pencil} alt="Pencil Icon" />
+  </div>
+      </div>
+     
     </div>
-    
+  </div>
+</div>
 
-
-    <div className='row custom-table-tr bg-light p-3 rounded m-3'>
-            <div className='col-2'>Gina</div>
-            <div className='col-2'>CALLEO</div>
-            <div className='col-2'>johndeo@effem.com</div>
-            <div className='col-2'>Current Job Position</div>
-            <div className='col-2'>United States of America</div>
-            <div className='col-2'>Admin</div>
-
-    </div>
-
-
-    <div className='row custom-table-tr bg-light p-3 rounded m-3'>
-            <div className='col-2'>Gina</div>
-            <div className='col-2'>CALLEO</div>
-            <div className='col-2'>johndeo@effem.com</div>
-            <div className='col-2'>Current Job Position</div>
-            <div className='col-2'>United States of America</div>
-            <div className='col-2'>Admin</div>
-
-    </div>
-
-
-    <div className='row custom-table-tr bg-light p-3 rounded m-3'>
-            <div className='col-2'>Gina</div>
-            <div className='col-2'>CALLEO</div>
-            <div className='col-2'>johndeo@effem.com</div>
-            <div className='col-2'>Current Job Position</div>
-            <div className='col-2'>United States of America</div>
-            <div className='col-2'>Admin</div>
-
-    </div>
-
-
-
-
-    </div>
 
    
 <div className=" paging align-items-center">

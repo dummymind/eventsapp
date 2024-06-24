@@ -320,19 +320,6 @@
   margin: 0% 2% 0 2% !important;
   }
    
-  .nav-custom {
-    color: darkblue !important;
-    font-weight: 800;
-    font-size:small;
-    opacity: 60% !important;
-  }
-   
-  .nav-custom.active{
-    color: darkblue !important;
-    font-weight: 800;
-    font-size:small;
-    opacity: 100% !important;
-  }
   .custom-font
   {
     color: darkblue !important;

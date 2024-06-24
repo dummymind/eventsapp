@@ -1,3 +1,5 @@
+import "./EventSideBar.css";
+
 function EventSideBar()
 {
 
@@ -9,7 +11,7 @@ function EventSideBar()
           aria-current="page"
           href="#"
         >
-          EVENT DETAILS
+          EVENT DETAILS <span className="circle-cus circle1-cus" ></span>
         </a>
       </li>
       <li className="nav-item">

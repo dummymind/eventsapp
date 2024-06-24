@@ -1,0 +1,51 @@
+.nav-custom {
+    color: darkblue !important;
+    font-weight: 800;
+    font-size:small;
+    opacity: 60% !important;
+  }
+   
+  .nav-custom.active{
+    color: darkblue !important;
+    font-weight: 800;
+    font-size:small;
+    opacity: 100% !important;
+    position: relative;
+    /* padding: 10px 0; */
+    cursor: pointer;
+
+}
+
+
+.nav-custom.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 3px;
+    background-color:#00D7B8;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-custom.active:hover::after,
+.nav-custom.active:focus::after {
+    transform: scaleX(1);
+}
+
+
+.circle-cus {
+    position: absolute;
+    border-radius: 50%;
+    background-color: red; /* semi-transparent blue */
+    color: #fff;
+    margin-left: 0.5rem;
+  }
+  
+  /* Position and size the circles */
+  .circle1-cus {
+    width: 0.8rem; /* Use a decimal for better precision */
+    height: 0.8rem;
+    top: 30%;
+  }

@@ -529,8 +529,8 @@
   
   .btn-custom-schedule-warning{
   font-size:10px;
-  border-color:orange;
-  color:orange;
+  border-color:red;
+  color:red;
   font-weight:bold;
   }
 
@@ -693,8 +693,8 @@
     
     .btn-custom-schedule-warning{
     font-size:10px !important;
-    border-color:orange !important;
-    color:orange !important;
+    border-color:red !important;
+    color:red !important;
     font-weight:bold !important;
     }
 
@@ -966,4 +966,9 @@
   border-radius: 50%;
   background-color: aqua;
   border: 3px solid #000;
+}
+
+.custom-jumbotron {
+  min-height: 360px; /* Adjust height as needed */
+  padding: 2rem 1rem; /* Adjust padding as needed */
 }

@@ -103,10 +103,6 @@
     color: darkblue !important;
   }
    
-  .btn-custom {
-    color: darkblue !important;
-    font-size: small;
-  }
    
   .btn-breadcrumb .selectbreadcrumb {
     font-weight: bold;
@@ -202,7 +198,7 @@
    
   .bd-placeholder-img {
     background: url('../../images/capture_decran_20240313_a_16271.jpg') 50% / cover no-repeat; 
-    font-size: 1.125rem;
+    font-size: .5rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -228,7 +224,7 @@
    
   .btn-custom {
     color: darkblue !important;
-    font-size: small;
+    font-size: .7rem !important;
   }
    
   .btn-breadcrumb .selectbreadcrumb {
@@ -317,9 +313,11 @@
       padding: 2rem 1rem; /* Adjust padding as needed */
   }
    
-   
+  
+
   .bottom-row {
   flex-shrink: 0; /* Ensure the bottom row doesn't shrink */
+  margin: 0% 2% 0 2% !important;
   }
    
   .nav-custom {

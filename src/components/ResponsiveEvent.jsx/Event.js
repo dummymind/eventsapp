@@ -5,6 +5,7 @@ import globeimage from '../../images/capture_decran_20240318_a_14532.jpg';
 import '../ResponsiveEvent.jsx/Event.css';
 import { EventDetails } from "../ResponsiveEvent.jsx/CreateEvent.ts";
 import Cover from './Cover.js';
+import './Event.css'
 
 import axios from 'axios';
 

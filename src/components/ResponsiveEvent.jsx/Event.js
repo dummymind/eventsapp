@@ -8,6 +8,7 @@ import Cover from './Cover.js';
 import './Event.css'
 
 import axios from 'axios';
+import EventSideBar from './EventSideBar.js';
 
 function Event() {
   //  const data = new EventDetails();
@@ -294,41 +295,9 @@ function Event() {
         <Cover />
         <div className="container-fluid">
           <div className="row m-2 mb-5">
-            <div className="col-md-3">
-              <ul className="nav nav-custom flex-column">
-                <li className="nav-item">
-                  <a
-                    className=" nav-custom nav-link active"
-                    aria-current="page"
-                    href="#"
-                  >
-                    EVENT DETAILS
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className=" nav-custom nav-link" href="#">
-                    SCHEDULE &amp; ITINERARY
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className=" nav-custom nav-link" href="#">
-                    GUESTS
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className=" nav-custom nav-link" href="#">
-                    HISTORY &amp; COMMENTS
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className=" nav-custom nav-link" href="#">
-                    POST EVENT SUMMARY
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <EventSideBar />
 
-            <div className="col-md-5">
+            <div className="col-md-6">
               <form onSubmit={handleSubmit}>
                 <div className=" bg-light rounded p-3 ">
 

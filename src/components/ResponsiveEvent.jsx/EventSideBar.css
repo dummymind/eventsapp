@@ -45,7 +45,7 @@
   
   /* Position and size the circles */
   .circle1-cus {
-    width: 0.8rem; /* Use a decimal for better precision */
-    height: 0.8rem;
-    top: 30%;
+    width: 0.6rem; /* Use a decimal for better precision */
+    height: 0.6rem;
+    top: 33%;
   }

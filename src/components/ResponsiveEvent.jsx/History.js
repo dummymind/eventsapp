@@ -27,7 +27,7 @@ function History()
   <div className="form-group row mb-2 align-items-center">
     <label
       htmlFor="staticEmail"
-      className="custom-font col-sm-2 col-form-label"
+      className="custom-font-lt col-sm-1 col-form-label"
     >
       04/04/2024
     </label>
@@ -35,7 +35,7 @@ function History()
       <strong>
         <input
           type="text"
-          className="custom-font-lt form-control-plaintext-cus form-control-plaintext"
+          className="custom-font-lt custom-font-lt-h  form-control-plaintext-cus form-control-plaintext"
           id="staticEmail"
           placeholder="Jason RIPPER"
         />
@@ -60,7 +60,7 @@ function History()
     </div>
   </div>
   <div className="form-group row mb-2 align-items-center">
-    <div className="col-sm-9 pr-0">
+    <div className="col-sm-10 pr-0">
       <input
         type="text"
         readOnly=""
@@ -69,7 +69,7 @@ function History()
         placeholder="Leave a comment"
       />
     </div>
-    <div className="col-sm-3 pl-0">
+    <div className="col-sm-2 pl-0">
       <button type="button" className="buttonrequest btn btn-success ml-2">
         SEND YOUR MESSAGE{" "}
       </button>

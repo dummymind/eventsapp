@@ -9,20 +9,20 @@ function Cover()
 {
     return (
 <div className="container-fluid">
-  <div className="bd-placeholder-img custom-jumbotron jumbotron p-6 mt-3 p-md-3 text-white rounded mb-2 d-flex flex-column justify-content-end m-4">
-    <div className="row bottom-row ml-2 mr-2">
+  <div className="bd-placeholder-img custom-jumbotron jumbotron p-6 mt-3 p-md-3 text-white rounded mb-2 d-flex flex-column justify-content-end m-3">
+    <div className="row bottom-row ml-1 mr-1">
       <div className="col-12 col-md-8 p-2 px-0 bg-light rounded mb-5 mb-md-0 ">
         <div className="content">
           <h6>
             <strong>Click here to modify the event</strong>
           </h6>
           <p>
-            <strong >
+            <strong className='text-align-center'>
               <img className='m-1' src={calendaricon} width={'18px'} height={'18px'} />
               Event date: TBD
             </strong>
           </p>
-          <p>Status</p>
+          <span>Status</span>
           <div className="breadcrumb btn-group btn-breadcrumb rounded">
             <a href="#" className="btn-custom btn btn-default selectbreadcrumb">
               Draft
@@ -50,7 +50,13 @@ function Cover()
           <div className="bg-white rounded p-3 position-absolute bottom-0 end-0">
             <button
               type="button"
-              className="btn-custom btn btn-outline-primary "
+              className="btn-custom btncus btn btn-outline-primary "
+            >
+              <strong>SECOND BUTTON</strong>
+            </button>
+            <button
+              type="button"
+              className="btn-custom btncus btn btn-outline-primary "
             >
               <strong>UPLOAD COVER IMAGE</strong>
             </button>

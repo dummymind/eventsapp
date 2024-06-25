@@ -1,5 +1,10 @@
-.btn-custom:hover {
+.btn-custom.btncus:hover {
   background-color: white !important;
   color: darkblue !important;
 
+}
+
+
+.btn-custom.btncus{
+  margin:5px !important;
 }

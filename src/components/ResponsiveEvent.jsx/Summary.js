@@ -1,6 +1,7 @@
 
 import calendaricon from '../../images/vector_x2.svg'
 import Cover from './Cover';
+import EventSideBar from './EventSideBar';
 
 function Summary()
 {
@@ -16,39 +17,7 @@ function Summary()
             <Cover />
             <div className="container-fluid">
               <div className="row m-2 mb-5">
-                <div className="col-md-3">
-                  <ul className="nav nav-custom flex-column">
-                    <li className="nav-item">
-                      <a
-                        className=" nav-custom nav-link active"
-                        aria-current="page"
-                        href="#"
-                      >
-                        EVENT DETAILS
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className=" nav-custom nav-link" href="#">
-                        SCHEDULE &amp; ITINERARY
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className=" nav-custom nav-link" href="#">
-                        GUESTS
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className=" nav-custom nav-link" href="#">
-                        HISTORY &amp; COMMENTS
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className=" nav-custom nav-link" href="#">
-                        POST EVENT SUMMARY
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <EventSideBar />
     
                 <div className="col-md-9 mb-5">
                

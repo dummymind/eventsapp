@@ -294,7 +294,7 @@ function Event() {
       <div className='container-fluid-custom'>
         <Cover />
         <div className="container-fluid">
-          <div className="row m-2 mb-5">
+          <div className="row m-1 mb-5">
             <EventSideBar />
 
             <div className="col-md-6">
@@ -538,9 +538,9 @@ function Event() {
                   <div className="form-group row mb-2">
                     <label
                       htmlFor="staticEmail"
-                      className="custom-font col-sm-4 col-form-label"
+                      className="border-custom-strip custom-font col-sm-4 col-form-label"
                     >
-                      <div className="vr-custom vr" /> PLEASE SPECIFY
+                      <div className=""> PLEASE SPECIFY</div>
                     </label>
                     <div className="col-sm-8 ">
                       <input

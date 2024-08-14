@@ -1,0 +1,55 @@
+.sidenav {
+    height: 100%;
+  
+    position: fixed;
+    top: 64px;
+    left: 0;
+    background-color: #f8f9fa; 
+    overflow-x: hidden;
+    padding-top: 0px;
+  }
+  
+  .sidenav .nav-link {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #495057; 
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav .nav-link:hover {
+    color: #007bff; 
+  }
+  
+  .sidenav .sub-nav {
+    margin-left: 20px;
+  }
+  
+  .sidenav .sub-nav .nav-link {
+    font-size: 16px;
+    padding: 8px 8px 8px 8px;
+  }
+  
+  
+  .sidenav .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    margin: 1px 0;
+
+  }
+  
+  .sidenav .card .card-header {
+    font-size: 22px;
+    color: #495057; 
+    margin-bottom: 10px;
+  }
+  
+  .sidenav .card .card-body {
+    padding: 0;
+    background-color: #e9ecef; 
+    border-radius: 8px;
+  }
+  

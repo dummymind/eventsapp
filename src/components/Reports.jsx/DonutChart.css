@@ -1,0 +1,10 @@
+.apexcharts-legend{
+    display: none !important;
+}
+/* .apexcharts-datalabels{
+    transform: translateY(-35px) !important;
+} */
+
+.apexcharts-toolbar{
+    display: none !important;
+}

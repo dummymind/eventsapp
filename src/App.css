@@ -1,18 +1,19 @@
+/* General App Styles */
 .App {
   text-align: center;
 }
-
+ 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+ 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+ 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,11 +24,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+ 
 .App-link {
   color: #61dafb;
 }
-
+ 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,33 +37,28 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-/* app.css */
-
+ 
+/* Custom App Styles */
 .badge {
   border: 1px solid gainsboro;
-  /* Set border color and thickness */
   padding: 5px;
-  /* Set padding */
   font-weight: bold;
   color: darkblue !important;
   margin: 5px;
 }
-
+ 
 .table-responsive::-webkit-scrollbar {
   display: none;
 }
-
-.buttonrequest, .buttonrequest:hover {
+ 
+.buttonrequest,
+.buttonrequest:hover {
   align-items: center;
   color: darkblue !important;
-  background-color: #00D7B8 !important;
-  font-size: smaller !important;
-  font-weight: 600 !important;
+  background-color: #00d7b8 !important;
+  font-size: small !important;
 }
-
+ 
 .leftcontainer {
   color: darkblue !important;
   align-items: top;
@@ -70,13 +66,13 @@
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 10px!important;
+  margin-left: 30px !important;
 }
-
+ 
 .rightcontainer {
   margin-top: 20px;
 }
-
+ 
 .calendar {
   background-color: white;
   border-radius: 10px;
@@ -84,14 +80,13 @@
   margin-bottom: 20px;
   color: darkblue !important;
 }
-
+ 
 .calendar thead th {
   border: 1px solid gainsboro;
   padding: 10px;
   text-align: center;
 }
-
-
+ 
 .calendar tbody td {
   border: 1px solid gainsboro;
   padding: 3px;
@@ -99,18 +94,19 @@
   width: 10px;
   height: 10px;
 }
-
+ 
 .today {
-  background-color: #f0f0f0;
+  background-color: lightblue;
+  border-radius: 50%;
 }
-
+ 
 .calendar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
-
+ 
 .calendar-headerh6 {
   color: darkblue !important;
   font-weight: 900 !important;
@@ -121,8 +117,9 @@
   align-items: center;
   margin-bottom: 0px;
 }
-
-.calendarbutton, .calendarbutton:hover {
+ 
+.calendarbutton,
+.calendarbutton:hover {
   background-color: darkblue !important;
   color: white !important;
   border: none;
@@ -130,25 +127,34 @@
   border-radius: 5px !important;
   cursor: pointer;
 }
-
-.listitems {
+ 
+/* .listitems {
   background-color: lavender;
-  height: 600px;
+  height: 350px;
   padding: 0px !important;
   margin-top: 10px !important;
   overflow: auto;
 }
+  */
 
+  .listitems {
+    background-color: lavender;
+    height: 600px;
+    padding: 0px !important;
+    margin-top: 10px !important;
+    overflow: auto;
+    font-size: smaller !important;
+    padding: 10px !important;
+  }
 .leftsearchbox {
   padding: 10px;
 }
-
+ 
 .paging {
   position: relative;
   color: darkblue;
   font-weight: 500;
-  font-size: 0.8rem;
-  right: 0px;
+  right: 10px;
   bottom: 0;
   display: flex;
   justify-content: right;
@@ -156,115 +162,104 @@
   height: 50px; /* Adjust as needed */
   background-color: white; /* Adjust as needed */
 }
-
+ 
 .centered-text {
   text-align: center;
 }
-
+ 
 .input-group-text {
   color: darkblue !important;
 }
-
-.crossbuttons, .crossbuttons:hover {
+ 
+.crossbuttons,
+.crossbuttons:hover {
   background-color: darkblue !important;
   color: white !important;
   border: none !important;
   padding: 5px 15px 5px 15px;
   border-radius: 20px !important;
   cursor: pointer !important;
-  font-weight: 400 ;
+  font-weight: 400;
   font-size: smaller !important;
-  margin-right: 5px!important;
+  margin-right: 5px !important;
 }
-
+ 
 .input-group-search .form-control-search {
   padding-left: 80px; /* Adjust as needed */
 }
-
+ 
 .input-group-search .input-group-append {
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
-
+ 
 .statuscontainer {
   padding: 10px;
 }
-
-/* Added new style for centering content */
+ 
 .containerl {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin-top: 20px;
 }
-
+ 
 .selectboxcontainer {
   overflow: scroll !important;
 }
+ 
 .selectboxcontainer::-webkit-scrollbar {
   display: none;
 }
-
-
-.card-img-top-custom{
-
+ 
+.card-img-top-custom {
   height: 110px;
   width: 322px;
 }
-
-.card-header-custom{
-  color:darkblue !important;
+ 
+.card-header-custom {
+  color: darkblue;
   text-transform: uppercase;
-  font-weight: 1000 !important;
-  font-size: small !important;
+  font-weight: 1000;
+  font-size: small;
 }
-
-.card-header-custom2{
-  color:darkblue !important;
-  text-transform: uppercase;
-  font-weight: 800 !important;
-  font-size: .7rem !important;
+ 
+.card-body-custom {
+  color: darkblue !important;
 }
-
-.card-body-custom{
-  color:darkblue !important;
-  
-}
-.card-text-custom{
-  color:darkblue !important;
-
-}
-
-
-.card-footer-button{
-  background-color: #00DCFA !important;
-  color:darkblue !important;
+ 
+.card-text-custom {}
+ 
+.card-footer-button {
+  background-color: #00dcfa !important;
+  color: darkblue !important;
   border-radius: 10% !important;
   font-size: smaller !important;
   font-weight: 900 !important;
 }
-
-.card-footer-button-right{
+ 
+.card-footer-button-right {
   background-color: lavender !important;
   font-size: smaller !important;
   font-weight: 900 !important;
   margin-right: 0.2rem;
 }
+ 
 
-.form-control-custom{
+.form-control-custom {
   font-size: small !important;
   background-color: lavender !important;
 }
-
-.input-group-text-custom{
-  border:none !important;
+ 
+.input-group-text-custom {
+  border: none !important;
   background-color: transparent !important;
   font-size: small !important;
   font-weight: 400 !important;
 }
-
+ 
 .card-footer-custom {
   display: flex;
   justify-content: space-between;
@@ -272,26 +267,26 @@
   padding: 10px;
   border-top: 1px solid #e5e5e5;
   background-color: transparent !important;
-  border:none !important;
+  border: none !important;
 }
-
+ 
 .highlight {
   background-color: yellow;
   border-radius: 50%;
   color: black !important;
 }
-
+ 
 .today {
   background-color: lightblue;
   border-radius: 50%;
 }
-
-  .status-buttons {
+ 
+.status-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-
+ 
 .status-button {
   background-color: blue;
   color: white;
@@ -300,14 +295,15 @@
   cursor: pointer;
   border-radius: 5px;
 }
-
+ 
 .status-button.selected {
   background-color: darkblue;
 }
-
+ 
 .status-button:hover {
   background-color: lightblue;
-}  
+}
+ 
 .status-button {
   background-color: blue;
   color: white;
@@ -319,82 +315,71 @@
   justify-content: space-between;
   align-items: center;
 }
-
+ 
 .status-button .remove-icon {
   margin-left: 8px;
   cursor: pointer;
 }
-
-.card-footer-button-right {
-  background-color: lavender !important;
-  font-size: smaller !important;
-  font-weight: 900 !important;
-  margin-right: 0.2rem;
-}
-
+ 
 .card-footer-button-right.btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-
+ 
 .card-footer-button-right.btn:hover {
   color: red;
 }
-
+ 
 .card-footer-button-right.btn:focus {
   outline: none;
 }
-
-/* Status button with remove icon styles */
+ 
 .status-button {
   background-color: blue;
   color: white;
   margin: 5px;
   padding: 5px 10px;
   border-radius: 5px;
-  position: relative; /* Needed for positioning the remove icon */
+  position: relative;
 }
-
+ 
 .status-button.selected {
   background-color: darkblue;
 }
-
+ 
 .status-button:hover {
   background-color: lightblue;
 }
-
+ 
 .remove-icon {
-  /* position: absolute; */
-  top: 3px; /* Adjust as needed */
-  right: 3px; /* Adjust as needed */
+  top: 3px;
+  right: 3px;
   cursor: pointer;
 }
-/* Add this CSS to handle the input field when status is removed */
+ 
 .input-field-removed {
-  background-color: #fff; /* Change background color to white */
-  color: #495057; /* Change text color */
-  border: 1px solid #ced4da; /* Add border */
-  border-radius: 0.25rem; /* Add border radius */
-  transition: all 0.3s ease; /* Add transition effect */
+  background-color: #fff;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
 }
-
+ 
 .input-field-removed::placeholder {
-  color: #6c757d; /* Change placeholder text color */
+  color: #6c757d;
 }
-
+ 
 .input-field-removed:focus {
-  border-color: #80bdff; /* Change border color on focus */
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add box shadow on focus */
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
-/* Status button container */
+ 
 .status-buttons-container {
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent wrapping */
+  overflow-x: auto;
+  white-space: nowrap;
 }
-
-/* Status buttons */
+ 
 .status-button {
   background-color: blue;
   color: white;
@@ -402,314 +387,174 @@
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
-  display: inline-block; /* Display inline to keep them in a single line */
+  display: inline-block;
 }
-
+ 
 .status-button.selected {
   background-color: darkblue;
 }
-
+ 
 .status-button:hover {
   background-color: lightblue;
 }
-
-/* Hide scrollbar */
+ 
 .status-buttons-container::-webkit-scrollbar {
   display: none;
 }
-
-/* Optional: Ensure scrollbar is hidden in other browsers */
+ 
 .status-buttons-container {
   scrollbar-width: none;
 }
-
-
-.visit-summary {
-  border: 1px solid rgba(229, 229, 245, 1);
-  background-color: #fff;
+ 
+/* Specific Styles for Calendar Highlighting */
+.calendar tbody td.draft {
+  background-color: green;
+  border-radius: 50%;
+  color: white !important;
 }
-
-@media (max-width: 991px) {
-  .visit-summary {
-    padding: 20px;
-  }
+ 
+.calendar tbody td.under-review {
+  background-color: blue;
+  border-radius: 50%;
+  color: white !important;
 }
-
-.visit-title {
-  color: #0000a0;
-  font-weight: 800;
-  font-size: 11px;
-  font-family: 'Mars Centra', sans-serif;
-  text-transform: uppercase;
+ 
+.calendar tbody td.open-event {
+  background-color: pink;
+  border-radius: 50%;
+  color: white !important;
 }
-
-.visit-content {
-  color: #000068;
-  letter-spacing: -0.12px;
-  margin-top: 16px;
-  font-weight: 400;
-  font-size: 12px;
-  font-family: 'Mars Centra', sans-serif;
+ 
+.calendar tbody td.attendance-confirmed {
+  background-color: red;
+  border-radius: 50%;
+  color: white !important;
 }
-
-.section-title {
-  font-weight: 800;
-  font-size: 15px;
-  line-height: 26px;
+ 
+.calendar tbody td.pending-documentation {
+  background-color: black;
+  border-radius: 50%;
+  color: white !important;
 }
-
-.subsection-title {
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
+ 
+.calendar tbody td.completed {
+  background-color: yellow;
+  border-radius: 50%;
+  color: black !important;
 }
-
-.text-content {
-  color: #000068;
-}
-
-.font-weight-bold {
-  font-weight: 1000;
-  color: #000068;
-}
-
-
-.itinerary {
-  border: 1px solid rgba(229, 229, 245, 1);
-  background-color: #fff;
-  text-transform: uppercase;
-}
-
-@media (max-width: 991px) {
-  .itinerary {
-    padding: 20px;
-  }
-}
-
-.itinerary-title {
-  color: #0000a0;
-  font-weight: 800;
-  font-size: 11px;
-  font-family: 'Mars Centra', sans-serif;
-  text-transform: uppercase;
-}
-
-.itinerary-content {
-  color: #000068;
-  margin-top: 16px;
-  font-weight: 400;
-  font-size: 12px;
-  font-family: 'Mars Centra', sans-serif;
-}
-
-.start-day {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  color: rgba(0, 0, 104, 1);
-}
-
-.subsection-title {
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 104, 1);
-}
-
-
-
-.btn-custom-schedule{
+ 
+.btn-custom-schedule-warning{
   font-size:10px;
-  border-color:darkblue;
-  color:darkblue;
+  border-color:red !important;
+  color:red;
+  margin:5px;
   font-weight:bold;
   }
-  
-  .btn-custom-schedule-warning{
-  font-size:10px;
-  border-color:orange;
-  color:orange;
-  font-weight:bold;
+ 
+  .custom-jumbotron {
+    min-height: 360px; /* Adjust height as needed */
+    padding: 2rem 1rem; /* Adjust padding as needed */
   }
-
-  .list-group-item-custom {
-    color:darkblue;
-    background-color: #E5E5F5;
-    font-size: smaller;
-    padding: 10px;
-    }
-
-
-    .file-drop-area {
-      background-color: #E5E5F5;
+ 
+  .switch {
     position: relative;
-    display: flex;
-    align-items: center;
-    
-    max-width: 100%;
-    padding: 10px;
-    border: 1px dotted gainsboro;
-    border-radius: 3px;
-    transition: 0.2s;
-   
+    display: inline-block;
+    width: 30px;
+    height: 17px;
   }
-  
-  .choose-file-button {
-    flex-shrink: 0;
-    background-color:#E5E5F5;
-    color: darkblue;
-    border-radius: 3px;
-    padding: 8px 15px;
-    margin-right: 10px;
-    font-size: 40px;
-    text-transform: uppercase;
-  }
-  
-  .file-message {
-    font-size: small;
-    color:darkblue;
-    font-weight: 300;
-    line-height: 1.4;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  
-  .file-input {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 80%;
-    width: 100%;
-    cursor: pointer;
+ 
+  .switch input {
     opacity: 0;
-    
+    width: 0;
+    height: 0;
   }
-
-
-
-  .visit-summary {
-    border: 1px solid rgba(229, 229, 245, 1);
-    background-color: #fff;
+ 
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: darkblue;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
-  
-  @media (max-width: 991px) {
-    .visit-summary {
-      padding: 20px;
-    }
+ 
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #00DCFA;
+    -webkit-transition: .4s;
+    transition: .4s;
   }
-  
-  .visit-title {
-    color: #0000a0;
-    font-weight: 800;
-    font-size: 11px;
-    font-family: 'Mars Centra', sans-serif;
-    text-transform: uppercase;
+ 
+  input:checked + .slider {
+    background-color: darkblue;
   }
-  
-  .visit-content {
-    color: #000068;
-    letter-spacing: -0.12px;
-    margin-top: 16px;
-    font-weight: 400;
-    font-size: 12px;
-    font-family: 'Mars Centra', sans-serif;
+ 
+  input:focus + .slider {
+    box-shadow: 0 0 1px darkblue;
   }
-  
-  .section-title {
-    font-weight: 800;
-    font-size: 15px;
-    line-height: 26px;
+ 
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
   }
-  
-  .subsection-title {
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
+ 
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
   }
-  
-  .text-content {
-    color: #000068;
+ 
+  .slider.round:before {
+    border-radius: 50%;
   }
-  
-  .font-weight-bold {
-    font-weight: 1000;
-    color: #000068;
-  }
-  
-  
-  .itinerary {
-    border: 1px solid rgba(229, 229, 245, 1);
-    background-color: #fff;
-    text-transform: uppercase;
-  }
-  
-  @media (max-width: 991px) {
-    .itinerary {
-      padding: 20px;
-    }
-  }
-  
-  .itinerary-title {
-    color: #0000a0;
-    font-weight: 800;
-    font-size: 11px;
-    font-family: 'Mars Centra', sans-serif;
-    text-transform: uppercase;
-  }
-  
-  .itinerary-content {
-    color: #000068;
-    margin-top: 16px;
-    font-weight: 400;
-    font-size: 12px;
-    font-family: 'Mars Centra', sans-serif;
-  }
-  
-  .start-day {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    color: rgba(0, 0, 104, 1);
-  }
-  
-  .subsection-title {
-    font-weight: 800;
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: rgba(0, 0, 104, 1);
-  }
-
-  .btn-custom-schedule{
-    font-size:10px !important;
-    border-color:darkblue !important;
-    color:darkblue !important;
-    font-weight:bold !important;
-    }
-    
-    .btn-custom-schedule-warning{
-    font-size:10px !important;
-    border-color:orange !important;
-    color:orange !important;
-    font-weight:bold !important;
-    }
-
-    .list-group-item-custom {
-      color:darkblue !important;
-      background-color: #E5E5F5 !important;
-      font-size: smaller !important;
-      padding: 10px !important;
-      }
-
-      .custom-select2
-{
-  font-size: smaller !important;
-  border-color: aquamarine !important;
-  /* width: 70% !important; */
+   
+  .btn-custom {
+  color: darkblue !important;
+  font-size: .7rem !important;
+}
+ 
+.nav-custom {
+  color: darkblue !important;
+  font-weight: 800;
+  font-size:small;
+  opacity: 60% !important;
+}
+ 
+.nav-custom.active{
+  color: darkblue !important;
+  font-weight: 800;
+  font-size:small;
+  opacity: 100% !important;
+  position: relative;
+  /* padding: 10px 0; */
+  cursor: pointer;
+ 
+}
+ 
+ 
+.nav-custom.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  height: 3px;
+  background-color:#00D7B8;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+ 
+.nav-custom.active:hover::after,
+.nav-custom.active:focus::after {
+  transform: scaleX(1);
 }
 
 .custom-select
@@ -719,7 +564,6 @@
   width: 70% !important;
 }
 
-
 .form-check-input-custom2{
   margin-right: 1rem !important;
   appearance: none;
@@ -727,21 +571,17 @@
   -moz-appearance: none;
 }
 
-
-
-/* Change the background color when checked */
 .form-check-input-custom2:checked {
   background-color:aquamarine !important; /* Background color of the checkbox when checked */
   border-color: blue !important; /* Border color of the checkbox when checked */
 }
 
-
 .futureevents p{
-
+ 
   color:darkblue !important;
   margin-bottom: .5rem !important;
 }
-
+ 
 .card-footer-button-confirmed{
   background-color: #A6DB00 !important;
   color:darkblue !important;
@@ -750,29 +590,35 @@
   font-weight: 900 !important;
 }
 
-
 .font-mars-centra {
   font-family: 'Mars Centra', sans-serif !important;
 }
+
 .font-700 {
   font-weight: 700 !important;
 }
+
 .font-800 {
   font-weight: 800 !important;
 }
+
 .text-uppercase {
   text-transform: uppercase !important;
 }
+
 .border-custom {
   border-radius: 8px;
   border: 1px solid rgba(229, 229, 245, 1);
 }
+
 .text-blue {
   color: #0000a0 !important;
 }
+
 .text-blue2 {
   color: #000068 !important;
 }
+
 .bg-green {
   background-color: #00d7b9;
 }
@@ -803,12 +649,13 @@
   padding: 24px 80px 80px 24px;
 }
 
-
-.image-container {
-  position: relative;
-  display: inline-block;
+.card-footer-button-right{
+  background-color: lavender !important;
+  font-size: smaller !important;
+  font-weight: 900 !important;
+  margin-right: 0.2rem;
 }
-
+/* Position and size the circles */
 .circle {
   position: absolute;
   border-radius: 50%;
@@ -819,8 +666,6 @@
   font-size: 0.6rem;
   font-weight: bold;
 }
-
-/* Position and size the circles */
 .circle1 {
   width: 1.4rem;
   height: 1.4rem;
@@ -833,15 +678,15 @@
   top: 50%;
   left: 20%;
 }
-
+ 
 .circle3 {
   width: 1.4rem;
   height: 1.4rem;
   top: 60%;
   left: 66%;
 }
-
-
+ 
+ 
 .circle4 {
   background-color: red !important;
   border: #000 3px solid;
@@ -866,7 +711,7 @@
   top: 70%;
   left: 45%;
 }
-
+ 
 .circle7 {
   background-color: #FFBF00 !important;
   border: #000 3px solid;
@@ -875,7 +720,7 @@
   top: 33%;
   left: 40%;
 }
-
+ 
 .zoom-buttons {
   position: absolute;
   bottom: 10px;
@@ -883,15 +728,15 @@
   display: flex;
   flex-direction: column;
 }
-
+ 
 .zoom-buttons button {
   margin-top: 5px;
   background-color: gainsboro;
   border: none;
   font: 1em 'Mars Centra', sans-serif;
 }
-
-
+ 
+ 
 .dropdown-top-right {
   position: absolute;
   color: darkblue !important;
@@ -902,68 +747,90 @@
   width: 30% !important;
   border: #00D7B8 1px solid !important;
 }
-
-
-.form-control-custom-search {
-  background-image: url('./images/search.png');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 20px 20px; 
-  padding-right: 60px !important; /* Adjust based on the image size */
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: box-shadow 0.15s ease-in-out, border-color 0.15s ease-in-out;
-  font-size: small;
-  margin-left: 10px !important;
-  font-weight: 600 !important;
-  color:darkblue !important;
-}
-
-.custom-select-form
-{
-  margin-left: 5px !important;
-  color:darkblue !important;
-  font-weight: 600 !important;
-  font-size: smaller !important;
-}
-
-
-
-.circle-container {
+ 
+.image-container {
   position: relative;
-  width: 20px; /* Adjust size as needed */
-  height: 20px; /* Adjust size as needed */
+  display: inline-block;
 }
 
-.circle-container .circle8 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: lightgreen;
-  border: 3px solid #000;
+.custom-font-lt.custom-font-lt-h
+  {  
+    color: darkblue !important;
+    font-weight: 800 !important;
+    font-size: 12px !important;
+  }
+
+.list-group-item-custom {
+    color:darkblue !important;
+    background-color: #E5E5F5 !important;
+    background-size: 20px 20px !important;
+    font-size: smaller !important;
+    padding: 10px !important;
+    opacity: 100% !important;
+ }
+
+.border-custom-strip{
+  border-left-width: 2px !important;
+border-left-style: solid !important;
+border-left-color: #00DCFA !important;
 }
-.circle-container .circle9 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #FFBF00;
-  border: 3px solid #000;
+
+.btn-custom-schedule-warning:hover {
+  background-color: transparent !important;
 }
-.circle-container .circle10 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: red;
-  border: 3px solid #000;
+
+/*Css for summary*/
+
+.file-drop-area {
+background-color: #E5E5F5;
+position: relative;
+display: flex;
+align-items: center;
+border:gainsboro 3px dotted !important;
+max-width: 100%;
+padding: 10px;
+border: 1px dotted gainsboro;
+border-radius: 3px;
+transition: 0.2s;
 }
-.circle-container .circle11 {
-  display: block;
+
+.choose-file-button {
+  flex-shrink: 0;
+  background-color:#E5E5F5;
+  color: darkblue;
+  border-radius: 3px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+ 
+.file-message {
+  font-size: small;
+  color:darkblue;
+  font-weight: 300;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 80%;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: aqua;
-  border: 3px solid #000;
+  cursor: pointer;
+  opacity: 0;
+ 
+}
+
+/* Send for validation button colour*/
+.buttonrequest, .buttonrequest:hover {
+  align-items: center;
+  color: darkblue !important;
+  background-color: #00D7B8 !important;
+  font-size: .6rem !important;
+  font-weight: 600 !important;
 }

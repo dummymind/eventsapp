@@ -1,0 +1,73 @@
+/* FamilyMembers.css */
+
+.family-members-container {
+  margin: 20px;
+}
+
+.family-members-grid {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #e9ecef;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: #343a40;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #343a40;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
+
+.pagination .disabled a {
+  color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+}

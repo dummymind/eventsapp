@@ -1,89 +1,60 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {BrowserRouter as Router,Route, Routes ,Navigate} from 'react-router-dom';
+import RequesterApp from './MarsRequestor';
+import AdminApp from './AppAdmin';
+import AppReport from './AppReport';
+import AppVip from './AppVip';
+import AppVip2 from './AppVip2';
+import Login from './components/Login';
+import UserManagement from './components/UserManagement.jsx/UserManagement'
+//import Vip from './components/MarsFamilyHome.jsx/MarsFamilyHome';
+//import Vip2 from './components/MarsFamilyComplete.jsx/MarsFamilyComplete';
 import './App.css';
-import Navbar from './components/Navbar';
-import LeftContainer from './components/LeftContainer';
-import RightContainer from './components/RightContainer';
-import Vip from './components/Vip';
-import Vip2 from './components/Vip2';
-import Header from './components/Header';
-import Main from './components/Main';
-import Event from './components/ResponsiveEvent.jsx/Event';
-import Guests from './components/ResponsiveEvent.jsx/Guests'
-import Summary from './components/ResponsiveEvent.jsx/Summary';
-import History from './components/ResponsiveEvent.jsx/History';
-
-import Schedule from './components/ResponsiveEvent.jsx/Schedule';
-import AdminReports from './components/AdminReports';
-
-
+import Create from './components/create.js';
+import Event from './components/ResponsiveEvent.jsx/Event.js';
+import Schedule from './components/ResponsiveEvent.jsx/Schedule.js';
+import Guests from './components/ResponsiveEvent.jsx/Guests.js';
+import History from './components/ResponsiveEvent.jsx/History.js';
+import Summary from './components/ResponsiveEvent.jsx/Summary.js';
+import GetEvent from './components/GetEvent.jsx/GetEvent';
+import ScheduleUnderReview from './components/GetEvent.jsx/ScheduleUnderReview.js';
+import GuestsUnderReview from './components/GetEvent.jsx/GuestsUnderReview.js';
+import HistoryUnderReview from './components/GetEvent.jsx/HistoryUnderReview.js';
+import SummaryUnderReview from './components/GetEvent.jsx/SummaryUnderReview.js';
 import axios from 'axios';
-import Dashboard from './components/Dashboard';
+
+
 
 function App() {
-  const [eventDates, setEventDates] = useState([]);
-  
+  const [isAdmin, setIsAdmin] = useState(false); // This can be based on some logic to determine if the user is admin
 
-  useEffect(() => {
-    const fetchEventDates = async () => {
-      try {
-        const response = await axios.get("https://localhost:44311/api/EventDetails");
-        const dates = response.data.map(event => event.eventDate);
-        setEventDates(dates);
-        console.log("dates is",dates);
-      } catch (error) {
-        console.error("Error fetching event dates:", error);
-      }
-    };
-
-    fetchEventDates();
-  }, []);
-
-  return (
-    <Router>
-      <div>
-        <Header />
-
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossOrigin="anonymous"
-        />
-
-        <Routes>
-          <Route path="/" element={
-            <div>
-              <Main />
-              <Navbar />
-              <div className="container-fluid">
-                <div className="progress d-flex flex-column" style={{ backgroundColor: 'gainsboro', height: '100%' }}>
-                  <div className="row">
-                    <div className="col-md-8">
-                      <LeftContainer />
-                    </div>
-                    <div className="col-md-4">
-                      <RightContainer openEventDates={eventDates} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          } />
+  return (<Router><div><link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossOrigin="anonymous"
+  />
+    <Routes>    
+          
           <Route path="/event" element={<Event />} />
-          <Route path="/guests" element={<Guests />} />
+          <Route path="/create" element={<Create />} />
           <Route path="/schedule" element={<Schedule />} />
-          <Route path="/summary" element={<Summary />} />
+          <Route path="/guests" element={<Guests />} />
           <Route path="/history" element={<History />} />
-          <Route path="/vip" element={<Vip />} />
-          <Route path="/vip2" element={<Vip2 />} />
-          <Route path="/adminreports" element={<AdminReports />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Routes>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></script>
-      </div>
-    </Router>
+          <Route path="/summary" element={<Summary />} />
+          <Route path="/event/:eventId" element={<GetEvent />} />
+          <Route path="/scheduleunderReview" element={<ScheduleUnderReview/>} />
+          <Route path="/guestsunderReview" element={<GuestsUnderReview/>} />
+          <Route path="/historyunderReview" element={<HistoryUnderReview/>} />
+          <Route path="/summaryunderReview" element={<SummaryUnderReview/>} />
+       
+     <Route path="/login" element={<Login />} />
+     <Route path="/AppAdmin" element={<RequesterApp/>} />
+     <Route path="/AppRequester" element={<RequesterApp/>} />
+     <Route path="/" element={<Navigate to="/login" />} />
+    </Routes>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossOrigin="anonymous"></script>
+    </div></Router>
   );
 }
 

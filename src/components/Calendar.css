@@ -20,7 +20,7 @@ th, td {
 }
 
 .highlight {
-    background-color: green !important;
+    background-color: blue !important;
     color: white;
     border-radius: 50%;
     font-weight: bold;

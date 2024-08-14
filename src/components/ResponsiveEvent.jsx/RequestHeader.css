@@ -1,0 +1,129 @@
+
+.requestHeader .custom-title {
+  background-color: white !important;
+  font-weight: bold !important;
+  font-size: 1rem !important;
+  color: darkblue !important;
+}
+
+.requestHeader .content {
+  color: darkblue;
+  padding: 10px;
+}
+
+.requestHeader .btn-custom {
+  color: darkblue !important;
+  font-size: .8rem;
+  margin: 5px !important;
+}
+
+.requestHeader .btn-custom:hover {
+  background-color: white !important;
+  color: darkblue !important;
+}
+
+.requestHeader .breadcrumb .btn-custom {
+  margin: 5px !important;
+}
+
+.requestHeader .breadcrumb .btn:not(:last-child):after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid gainsboro;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 100%;
+  z-index: 3;
+}
+
+.requestHeader .breadcrumb .btn:not(:last-child):before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid gainsboro;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 3;
+}
+
+.requestHeader .breadcrumb .btn {
+  padding: 3px 9px 6px 12px;
+}
+
+.requestHeader .breadcrumb .btn:first-child {
+  padding: 3px 3px 3px 5px;
+}
+
+.requestHeader .breadcrumb .btn:last-child {
+  padding: 3px 9px 3px 12px;
+}
+
+.requestHeader .btn-breadcrumb .btn.btn-default:not(:last-child):after {
+  border-left: 10px solid gainsboro;
+}
+
+.requestHeader .btn-breadcrumb .btn.btn-default:not(:last-child):before {
+  border-left: 10px solid gainsboro;
+}
+
+.requestHeader .btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
+  border-left: 10px solid #ebebeb;
+}
+
+.requestHeader .btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
+  border-left: 10px solid #ebebeb;
+}
+
+.requestHeader .btn-breadcrumb .btn.btn-default.selectbreadcrumb:not(:last-child):after {
+  border-left: 10px solid #00D7B8;
+}
+
+.requestHeader .btn-breadcrumb .selectbreadcrumb .btn.btn-default:not(:last-child):before {
+  border-left: 10px solid #00D7B8;
+}
+
+.requestHeader .btn-breadcrumb .selectbreadcrumb .btn.btn-default:hover:not(:last-child):after {
+  border-left: 10px solid #00D7B8;
+}
+
+.requestHeader .btn-breadcrumb .selectbreadcrumb .btn.btn-default:hover:not(:last-child):before {
+  border-left: 10px solid #00D7B8;
+}
+
+.requestHeader .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white !important;
+  background-color: darkblue;
+  padding: 10px 0;
+  border-top: 1px solid gainsboro;
+  font-size: small !important;
+}
+
+.requestHeader .footer .left-button {
+  margin-left: 10px; /* Margin for the left button */
+  margin-bottom: 5px;
+  font-size: smaller !important;
+}
+
+.requestHeader .footer .right-buttons {
+  margin-right: 10px; /* Margin for the right buttons */
+  margin-bottom: 5px;
+  font-size: smaller !important;
+}
+
+.requestHeader .custom-title.form-control-plaintext::placeholder {
+  color: darkblue !important;
+}

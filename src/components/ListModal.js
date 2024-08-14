@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Modal.css'; // Import your CSS for modal styling
-import rectangelimage from '../images/capture_decran_20240313_a_16271.png'
-import rectangelimage2 from '../images/rectangle_1871.png'
+import rectangelimage from '../images/capture_decran_20240313_a_16271.jpg'
+import rectangelimage2 from '../images/rectangle_1871.jpg'
 
 
 const ListModal = ({ showModal, toggleModal }) => {

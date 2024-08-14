@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Calendar from './forfrontend/Calendar2';
+import Calendar from './Calendar';
+import './Calendar.css'
 
-function RightContainer({ openEventDates }) {
+function RightContainer({ eventDates }) {
     const [date, setDate] = useState(new Date());
 
     const handleMonthChange = (direction) => {
@@ -44,7 +45,7 @@ function RightContainer({ openEventDates }) {
                         <button className="calendarbutton btn btn-success" onClick={() => handleYearChange(1)}>&gt;</button>
                     </div>
                 </div>
-                <Calendar date={date} openEventDates={openEventDates} />
+                <Calendar date={date} eventDates={eventDates} />
             </div>
         </>
     );

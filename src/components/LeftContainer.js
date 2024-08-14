@@ -2,10 +2,14 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import rectangelimage from '../images/capture_decran_20240313_a_16272.jpg';
 import rectangelimage2 from '../images/rectangle_1871.jpg';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import {GET_ALL_URL} from './ApiDetails.js'
 
-function LeftContainer({ setOpenEventDates }) {
+function LeftContainer({ setFilteredEventDates }) {
   const [statuses, setStatuses] = useState([]);
-  const [selectedStatuses, setSelectedStatuses] = useState([]); // Initialize with empty array
+  const [selectedStatuses, setSelectedStatuses] = useState([]);
   const [events, setEvents] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
@@ -16,7 +20,7 @@ function LeftContainer({ setOpenEventDates }) {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get("https://localhost:44311/api/EventDetails");
+        const response = await axios.get(GET_ALL_URL);
         setEvents(response.data);
 
         const uniqueStatuses = Array.from(new Set(response.data.map(event => event.eventStatus)));
@@ -25,17 +29,17 @@ function LeftContainer({ setOpenEventDates }) {
         const openEventDates = response.data
           .filter(event => event.eventStatus === "Open Event")
           .map(event => new Date(event.eventDate));
-        setOpenEventDates(openEventDates);
-
+        
         // Initialize selectedStatuses with all available statuses
         setSelectedStatuses(uniqueStatuses);
+        setFilteredEventDates(openEventDates);
       } catch (error) {
         console.error("Error fetching event data:", error);
       }
     };
 
     fetchEvents();
-  }, [setOpenEventDates]);
+  }, [setFilteredEventDates]);
 
   const isSameDate = (date1, date2) => {
     const d1 = new Date(date1);
@@ -47,6 +51,23 @@ function LeftContainer({ setOpenEventDates }) {
     );
   };
 
+  const handleStatusClick = (status) => {
+    setSelectedStatuses(prevStatuses =>
+      prevStatuses.includes(status)
+        ? prevStatuses.filter(s => s !== status)
+        : [...prevStatuses, status]
+    );
+  };
+
+  const handleRemoveStatus = (statusToRemove) => {
+    setSelectedStatuses(prevStatuses => prevStatuses.filter(status => status !== statusToRemove));
+    setEvents(prevEvents => prevEvents.filter(event => event.eventStatus !== statusToRemove));
+  };
+
+  const handleRemoveEvent = (eventId) => {
+    setEvents(prevEvents => prevEvents.filter(event => event.id !== eventId));
+  };
+
   const filteredEvents = events.filter(event =>
     (selectedStatuses.length === 0 || selectedStatuses.includes(event.eventStatus)) &&
     (searchQuery === "" ||
@@ -55,10 +76,15 @@ function LeftContainer({ setOpenEventDates }) {
     (selectedDate === "" || isSameDate(event.eventDate, selectedDate))
   );
 
+  useEffect(() => {
+    const filteredDates = filteredEvents.map(event => event.eventDate);
+    setFilteredEventDates(filteredDates);
+  }, [filteredEvents, setFilteredEventDates]);
+
   const sortedEvents = [...filteredEvents].sort((a, b) => {
-    if (sortBy === "Newer") {
+    if (sortBy === "Newest") {
       return new Date(b.eventDate) - new Date(a.eventDate);
-    } else if (sortBy === "Older") {
+    } else if (sortBy === "Oldest") {
       return new Date(a.eventDate) - new Date(b.eventDate);
     } else if (sortBy === "A to Z") {
       return a.eventTitle.localeCompare(b.eventTitle);
@@ -75,41 +101,16 @@ function LeftContainer({ setOpenEventDates }) {
     setCurrentPage(pageNumber);
   };
 
-  const handleStatusClick = (status) => {
-    setSelectedStatuses(prevStatuses =>
-      prevStatuses.includes(status) ? prevStatuses.filter(s => s !== status) : [...prevStatuses, status]
-    );
-  };
-
-  const handleRemoveStatus = (statusToRemove) => {
-    setSelectedStatuses(prevStatuses => {
-      // Remove the status to be removed
-      const updatedStatuses = prevStatuses.filter(status => status !== statusToRemove);
-      // If no statuses are selected, initialize selectedStatuses with all available statuses
-      if (updatedStatuses.length === 0) {
-        return statuses;
-      } else {
-        return updatedStatuses;
-      }
-    });
-    setSearchQuery(""); // Clear search query
-  };
-
   return (
     <div className="leftcontainer d-flex flex-column progress-bar bg-white rounded-end" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style={{ minHeight: '500px' }}>
       <div className="leftsearchbox">
         <div className="container-fluid d-flex align-items-center statuscontainer">
           <h6 className="calendar-headerh6 mr-2">Status</h6>
-          <div className={`status-buttons-container ${selectedStatuses.length > 0 ? '' : 'initial-load'}`}>
+          <div className="status-buttons-container">
             {statuses.map(status => (
-              <div key={status} className={`status-button ${selectedStatuses.includes(status) ? 'selected' : ''}`} onClick={() => handleStatusClick(status)}>
-                {status}
-                {selectedStatuses.includes(status) && (
-                  <span className="remove-icon" onClick={(e) => {
-                    e.stopPropagation();
-                    handleRemoveStatus(status);
-                  }}>✖️</span>
-                )}
+              <div key={status} className={`status-button ${selectedStatuses.includes(status) ? 'selected' : ''}`}>
+                <span onClick={() => handleStatusClick(status)}>{status}</span>
+                <span className="remove-icon" onClick={() => handleRemoveStatus(status)}>✖️</span>
               </div>
             ))}
           </div>
@@ -121,12 +122,13 @@ function LeftContainer({ setOpenEventDates }) {
                 <label htmlFor="searchInput" className="input-group-text input-group-text-custom">Search</label>
                 <input
                   type="text"
-                  className={`form-control-custom rounded form-control ${selectedStatuses.length === 0 ? 'input-field-removed' : ''}`}
+                  className={`form-control-custom rounded form-control`}
                   id="searchInput"
-                  placeholder="Type a keyword                            &#x1F50E;"
+                  placeholder="Type a keyword"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
+                <FontAwesomeIcon icon={faSearch} className="search-icon-custom"/>
               </div>
             </div>
             <div className="col-md-4">
@@ -164,7 +166,6 @@ function LeftContainer({ setOpenEventDates }) {
       </div>
       <div className="listitems">
         <div className="row card-group text-wrap text-start m-2">
-          
           {currentEvents.map(event => (
             <div className='col-md-4 p-2' key={event.id}>
               <div className="card rounded">
@@ -176,23 +177,23 @@ function LeftContainer({ setOpenEventDates }) {
                 />
                 <div className="card-body-custom card-body">
                   <h6 className='card-header-custom'>{event.eventTitle}</h6>
-                                   <p className="card-text-custom card-text">
+                  <p className="card-text-custom card-text">
                     with <b>Julian MARS, Justin MARS, Pamela MARS, Marijke MARS</b>
                     <p>Still accepting Family members<div><b>{new Date(event.eventDate).toLocaleDateString()} • {event.cityName}, {event.stateName}, {event.countryName}</b></div></p>
                     <span>Created by Gina CALLEO on {new Date(event.createdDate).toLocaleDateString()}</span>
                   </p>
                 </div>
                 <div className="card-footer-custom card-footer">
-                  <button className='card-footer-button btn rounded-pill'>OPEN EVENT</button>
+                  <Link to={`/event/${event.eventId}`} className="card-footer-button btn rounded-pill">OPEN EVENT</Link>
                   <span className='float-right-custom'>
-                    <button className='card-footer-button-right btn'>X</button>
+                    <button className='card-footer-button-right btn' onClick={() => handleRemoveEvent(event.id)}>X</button>
                     <button className='card-footer-button-right btn'>✔️</button>
                   </span>
                 </div>
               </div>
             </div>
           ))}
-    </div>
+        </div>
       </div>
       <div className="paging align-items-center">
         <span className="centered-text">
@@ -222,8 +223,6 @@ function LeftContainer({ setOpenEventDates }) {
       </div>
     </div>
   );
-  }
-
+}
 
 export default LeftContainer;
-

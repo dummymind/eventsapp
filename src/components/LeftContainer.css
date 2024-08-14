@@ -1,97 +1,136 @@
 .leftcontainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 10px;
-    min-height: 500px;
-  }
-  
-  .leftsearchbox {
-    padding: 10px;
-  }
-  
-  .statuscontainer {
-    margin-bottom: 10px;
-  }
-  
-  .calendar-headerh6 {
-    margin-right: 10px;
-  }
-  
-  .selectboxcontainer {
-    flex: 1;
-  }
-  
-  .input-group {
-    width: 100%;
-  }
-  
-  .listitems {
-    flex: 1;
-    overflow-y: auto;
-  }
-  
-  .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .card {
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-  }
-  
-  .card-img-top {
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 10px;
-  }
-  
-  .card-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .card-text {
-    margin-top: 5px;
-  }
-/* src/UnderReview.css */
+  color: darkblue !important;
+  align-items: top;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px !important;
+}
 
-.under-review-container {
-    display: flex;
-    align-items: center;
-    background-color: #f0f0ff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .status-text {
-    color: #000080;
-    font-weight: bold;
-    margin-right: 20px;
-  }
-  
-  .button-container {
-    display: flex;
-  }
-  
-  .review-button {
-    background-color: #f0f0ff;
-    border: none;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  .review-button .icon {
-    font-size: 20px;
-    color: #000080;
-  }
-    
+.status-button {
+  background-color: blue;
+  color: white;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+}
+
+.status-button.selected {
+  background-color: darkblue;
+}
+
+.status-button:hover {
+  background-color: lightblue;
+}
+
+.status-buttons-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.status-buttons-container::-webkit-scrollbar {
+  display: none;
+}
+
+.remove-icon {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.leftsearchbox {
+  padding: 10px;
+}
+
+.container-fluid {
+  margin-bottom: 10px;
+}
+
+.input-group-text-custom {
+  border: none !important;
+  background-color: transparent !important;
+  font-size: small !important;
+  font-weight: 400 !important;
+}
+
+.form-control-custom {
+  font-size: small !important;
+  background-color: lavender !important;
+}
+
+.listitems {
+  background-color: lavender;
+  height: 350px;
+  padding: 0px !important;
+  margin-top: 10px !important;
+  overflow: auto;
+}
+
+.card-img-top-custom {
+  height: 110px;
+  width: 322px;
+}
+
+.card-header-custom {
+  color: darkblue;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: small;
+}
+
+.card-body-custom {
+  color: darkblue !important;
+}
+
+.card-footer-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.card-footer-button {
+  background-color: #00dcfa !important;
+  color: darkblue !important;
+  border-radius: 10% !important;
+  font-size: smaller !important;
+  font-weight: 900 !important;
+}
+
+.card-footer-button-right {
+  background-color: lavender !important;
+  font-size: smaller !important;
+  font-weight: 900 !important;
+  margin-right: 0.2rem;
+}
+
+.paging {
+  position: relative;
+  color: darkblue;
+  font-weight: 500;
+  right: 10px;
+  bottom: 0;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 50px; /* Adjust as needed */
+  background-color: white; /* Adjust as needed */
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.form-check-label {
+  margin-left: 10px;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}

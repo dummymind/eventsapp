@@ -1,412 +1,263 @@
 .App {
-    text-align: center;
-  }
-   
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
   }
-   
-   
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-   
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-   
-  .App-link {
-    color: #61dafb;
-  }
-   
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-   
-   
-  .badge {
-    border: 1px solid gainsboro;
-    /* Set border color and thickness */
-    padding: 5px !important;
-    /* Set padding */
-    font-weight: bold !important;
-    color: darkblue !important;
-    margin: 5px !important;
-  }
-   
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    background-color: darkblue;
-    padding: 10px 0;
-    border-top: 1px solid gainsboro;
-    font-size: small !important;
-  }
-   
-  .buttonrequest, .buttonrequest:hover {
-    align-items: center;
-    color: darkblue !important;
-    background-color: #00D7B8 !important;
-    font-size: small !important;
-  }
-   
-   
-  .footer .left-button {
-    margin-left: 15px; /* Margin for the left button */
-    margin-bottom: 5px;
-    font-size: small !important;
-  }
-  .footer .right-buttons {
-    margin-right: 15px; /* Margin for the right buttons */
-    font-size: small !important;
-  }
-   
-   
-   
-  /* .bd-placeholder-img {
-    background: url('../../images/capture_decran_20240313_a_16271.jpg') 50% / cover no-repeat; 
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color:darkblue;
-  } */
-   
-  .content {
-    color:darkblue;
-    padding: 10px;
-    font-size: small;
-  }
-   
-  .btn-breadcrumb {
-    background-color: gainsboro !important;
-    font-size: 5px;
-    color: darkblue !important;
-  }
-   
-  .btn-custom {
-    color: darkblue !important;
-    font-size: small;
-  }
-   
-  .btn-breadcrumb .selectbreadcrumb {
-    font-weight: bold;
-    background-color: #00D7B8 !important;
-  }
-   
-  .btn-breadcrumb .btn:not(:last-child):after {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    border-left: 10px solid gainsboro;
-    position: absolute;
-    top: 50%;
-    margin-top: -17px;
-    left: 100%;
-    z-index: 3;
-  }
-   
-  .btn-breadcrumb .btn:not(:last-child):before {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    border-left: 10px solid gainsboro;
-    position: absolute;
-    top: 50%;
-    margin-top: -17px;
-    margin-left: 1px;
-    left: 100%;
-    z-index: 3;
-  }
-   
-  .btn-breadcrumb .btn {
-    padding: 3px 9px 6px 12px;
-  }
-   
-  .btn-breadcrumb .btn:first-child {
-    padding: 3px 3px 3px 5px;
-  }
-   
-  .btn-breadcrumb .btn:last-child {
-    padding: 3px 9px 3px 12px;
-  }
-   
-  .btn-breadcrumb .btn.btn-default:not(:last-child):after {
-    border-left: 10px solid gainsboro;
-  }
-   
-  .btn-breadcrumb .btn.btn-default:not(:last-child):before {
-    border-left: 10px solid gainsboro;
-  }
-   
-  .btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
-    border-left: 10px solid #ebebeb;
-  }
-   
-  .btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
-    border-left: 10px solid #ebebeb;
-  }
-   
-  .btn-breadcrumb .btn.btn-default.selectbreadcrumb:not(:last-child):after {
-    border-left: 10px solid #00D7B8;
-  }
-   
-  .btn-breadcrumb .selectbreadcrumb .btn.btn-default:not(:last-child):before {
-    border-left: 10px solid #00D7B8 ;
-  }
-   
-  .btn-breadcrumb .selectbreadcrumb .btn.btn-default:hover:not(:last-child):after {
-    border-left: 10px solid #00D7B8 ;
-  }
-   
-  .btn-breadcrumb .selectbreadcrumb .btn.btn-default:hover:not(:last-child):before {
-    border-left: 10px solid #00D7B8;
-  }
-   
-   
-  .custom-jumbotron {
-      min-height: 360px; /* Adjust height as needed */
-      padding: 2rem 1rem; /* Adjust padding as needed */
-  }
-   
-   
-  .bottom-row {
-  flex-shrink: 0; /* Ensure the bottom row doesn't shrink */
-  }
-   
-   
-  .bd-placeholder-img {
-    background: url('../../images/capture_decran_20240313_a_16271.jpg') 50% / cover no-repeat; 
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color:darkblue;
-  }
-   
+}
 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
-  .content {
-    color:darkblue;
-    padding: 10px;
-    font-size: small;
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-   
-  .btn-breadcrumb {
-    background-color: gainsboro;
-    font-size: 5px;
-    color: darkblue !important;
-    padding:0px 10px 0px 0px;
+  to {
+    transform: rotate(360deg);
   }
-   
-  .btn-custom {
-    color: darkblue !important;
-    font-size: small;
-  }
-   
-  .btn-breadcrumb .selectbreadcrumb {
-    font-weight: bold;
-    background-color: #00D7B8;
-  }
-   
-  .btn-breadcrumb .btn:not(:last-child):after {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    border-left: 10px solid gainsboro;
-    position: absolute;
-    top: 50%;
-    margin-top: -17px;
-    left: 100%;
-    z-index: 3;
-  }
-   
-  .btn-breadcrumb .btn:not(:last-child):before {
-    content: " ";
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    border-left: 10px solid gainsboro;
-    position: absolute;
-    top: 50%;
-    margin-top: -17px;
-    margin-left: 1px;
-    left: 100%;
-    z-index: 3;
-  }
-   
-  .btn-breadcrumb .btn {
-    padding: 3px 9px 6px 12px;
-  }
-   
-  .btn-breadcrumb .btn:first-child {
-    padding: 3px 3px 3px 5px;
-  }
-   
-  .btn-breadcrumb .btn:last-child {
-    padding: 3px 9px 3px 12px;
-  }
-   
-  .btn-breadcrumb .btn.btn-default:not(:last-child):after {
-    border-left: 10px solid gainsboro;
-  }
-   
-  .btn-breadcrumb .btn.btn-default:not(:last-child):before {
-    border-left: 10px solid gainsboro;
-  }
-   
-  .btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {
-    border-left: 10px solid #ebebeb;
-  }
-   
-  .btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {
-    border-left: 10px solid #ebebeb;
-  }
-   
-  .btn-breadcrumb .btn.btn-default.selectbreadcrumb:not(:last-child):after {
-    border-left: 10px solid #00D7B8;
-  }
-   
-  .btn-breadcrumb .selectbreadcrumb .btn.btn-default:not(:last-child):before {
-    border-left: 10px solid #00D7B8;
-  }
-   
-  .btn-breadcrumb .selectbreadcrumb .btn.btn-default:hover:not(:last-child):after {
-    border-left: 10px solid #00D7B8;
-  }
-   
-  .btn-breadcrumb .selectbreadcrumb .btn.btn-default:hover:not(:last-child):before {
-    border-left: 10px solid #00D7B8;
-  }
-   
-   
-  .custom-jumbotron {
-      min-height: 360px; /* Adjust height as needed */
-      padding: 2rem 1rem; /* Adjust padding as needed */
-  }
-   
-   
-  .bottom-row {
-  flex-shrink: 0; /* Ensure the bottom row doesn't shrink */
-  }
-   
-  .nav-custom {
-    color: darkblue !important;
-    font-weight: 800;
-    font-size:medium;
-    opacity: 60% !important;
-  }
-   
-  .nav-custom.active{
-    color: darkblue !important;
-    font-weight: 800;
-    font-size:medium;
-    opacity: 100% !important;
-  }
-  .custom-font
-  {
-    color: darkblue !important;
-    font-weight: 800 !important;
-    font-size: smaller !important;
-  }
-  .custom-font-lt 
-  {   
-    color: darkblue !important;
-    font-weight: 500 !important;
-    font-size: 12px !important;
-   
-  }
-  .custom-font-lt.form-control-plaintext{
-  padding-left: 10px !important;
-  }
-   
-  .custom-font-lt.form-control-plaintext::placeholder{
-  color:darkblue !important;
-  }
-  .custom-font-lt.form-control{
+}
+
+.badge {
+  border: 1px solid gainsboro;
+  padding: 5px !important;
+  font-weight: bold !important;
+  color: darkblue !important;
+  margin: 5px !important;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: darkblue;
+  padding: 10px 0;
+  border-top: 1px solid gainsboro;
+  font-size: small !important;
+  z-index: 1000;
+}
+
+.buttonrequest,
+.buttonrequest:hover {
+  align-items: center;
+  color: darkblue !important;
+  background-color: #00D7B8 !important;
+  font-size: small !important;
+}
+
+.footer .left-button {
+  margin-left: 15px; /* Margin for the left button */
+  margin-bottom: 5px;
+  font-size: small !important;
+}
+
+.footer .left-button:hover {
+  background-color: transparent !important;
+  font-size: smaller !important;
+  color: white !important;
+}
+
+.footer .right-buttons {
+  margin-right: 15px; /* Margin for the right buttons */
+  font-size: small !important;
+}
+
+.footer .right-buttons:hover {
+  background-color: transparent !important;
+  font-size: smaller !important;
+  color: white !important;
+}
+
+.custom-font-lt.custom-font-lt-h {
+  color: darkblue !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+}
+
+.content {
+  color: darkblue;
+  padding: 10px;
+  font-size: small;
+}
+
+.btn-breadcrumb {
   background-color: #E5E5F5 !important;
-  }
-  .custom-font-lt.form-control::placeholder{
+  opacity: 60%;
+  font-size: 5px;
+  color: darkblue !important;
+}
+
+.btn-breadcrumb .selectbreadcrumb {
+  font-weight: bold;
+  background-color: #00D7B8 !important;
+}
+
+.btn-breadcrumb .btn:not(:last-child):after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid gainsboro;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 100%;
+  z-index: 3;
+}
+
+.btn-breadcrumb .btn:not(:last-child):before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 10px solid gainsboro;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 3;
+}
+
+.btn-breadcrumb .btn {
+  padding: 3px 9px 6px 12px;
+}
+
+.btn-breadcrumb .btn:first-child {
+  padding: 3px 3px 3px 5px;
+}
+
+.btn-breadcrumb .btn:last-child {
+  padding: 3px 9px 3px 12px;
+}
+
+.custom-jumbotron {
+  min-height: 360px; /* Adjust height as needed */
+  padding: 2rem 1rem; /* Adjust padding as needed */
+}
+
+.bottom-row {
+  flex-shrink: 0; /* Ensure the bottom row doesn't shrink */
+  margin: 0% 2% 0 2% !important;
+}
+
+.bd-placeholder-img {
+  background: url('../../images/capture_decran_20240313_a_16271.jpg') 50% / cover no-repeat;
+  font-size: 0.5rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: darkblue;
+}
+
+.content {
+  color: darkblue;
+  padding: 10px;
+  font-size: small;
+}
+
+.btn-breadcrumb {
+  background-color: gainsboro;
+  font-size: 5px;
+  color: darkblue !important;
+  padding: 0px 10px 0px 0px;
+}
+
+.btn-custom {
+  color: darkblue !important;
+  font-size: .7rem;
+}
+
+.custom-font {
+  color: darkblue !important;
+  font-weight: 800 !important;
+  font-size: .7rem !important;
+}
+
+.custom-font-lt {
+  color: darkblue !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+}
+
+.custom-font-lt.form-control-plaintext {
+  padding-left: 10px !important;
+}
+
+.custom-font-lt.form-control-plaintext::placeholder {
+  color: darkblue !important;
+}
+
+.custom-font-lt.form-control {
+  background-color: #E5E5F5 !important;
+}
+
+.custom-font-lt.form-control::placeholder {
   color: darkblue !important;
   opacity: 60% !important;
-  }
-   
-  .custom-font-lt.form-control.form-select{
+}
+
+.custom-font-lt.form-control.form-select {
   color: darkblue !important;
   opacity: 60% !important;
-  }
-   
-  .custom-font embed{
+}
+
+.custom-font embed {
   font-weight: 100 !important;
-  }
-   
-   
-  .container-fluid-custom
-  {
+}
+
+.container-fluid-custom {
   background-color: gainsboro !important;
-  }
-   
-   
-   
-  .vr-custom
-  {
+}
+
+.vr-custom {
   background-color: aqua;
   width: 3px;
   height: 15px;
-  }
-   
-  .form-check-custom
-  {
-  background-color:#E5E5F5;
-  }
-   
-  .form-check-label-custom
-  {
+}
+
+.form-check-custom {
+  background-color: #E5E5F5;
+}
+
+.form-check-label-custom {
   color: darkblue;
   font-size: 12px;
   font-weight: 1000;
-  }
-   
-   
-  .form-check-input-custom:checked {
+}
+
+.form-check-input-custom:checked {
   background-color: #00D7B8;
   border-color: darkblue;
-  }
-   
-   
-  .footer {
+}
+
+.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -415,19 +266,67 @@
   padding: 10px 0;
   border-top: 1px solid gainsboro;
   font-size: small !important;
-  }
-   
-  .footer .left-button {
+}
+
+.footer .left-button {
   margin-left: 10px; /* Margin for the left button */
   margin-bottom: 5px;
   font-size: smaller !important;
-  }
-  .footer .right-buttons {
+}
+
+.footer .right-buttons {
   margin-right: 10px; /* Margin for the right buttons */
   margin-bottom: 5px;
   font-size: smaller !important;
-  }
-  .error-message {
-    color: red;
-  }
+}
 
+.error-message {
+  color: red;
+}
+
+/* Navigation Styles */
+.nav-custom {
+  color: darkblue !important;
+  font-weight: 800;
+  font-size: small;
+  opacity: 60% !important;
+}
+
+.nav-custom.active {
+  color: darkblue !important;
+  font-weight: 800;
+  font-size: small;
+  opacity: 100% !important;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-custom.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  height: 3px;
+  background-color: #00D7B8;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-custom.active:hover::after,
+.nav-custom.active:focus::after {
+  transform: scaleX(1);
+}
+
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.red-dot {
+  background-color: red !important;
+}

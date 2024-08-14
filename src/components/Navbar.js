@@ -9,6 +9,7 @@ function Navbar() {
     return (
        
     <>
+
         {/* <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid"> */}
                 {/* <div className="d-flex align-items-center">
@@ -32,6 +33,7 @@ function Navbar() {
             {/* </div>
         </nav> */}
         </>
+        
      
     );
 }

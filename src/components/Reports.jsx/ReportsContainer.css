@@ -1,0 +1,250 @@
+/* ReportsContainer.css */
+
+.custom-container {
+  margin-top: 20px;
+  max-width: 100%; /* Adjust this value based on your layout needs */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr)); /* 9 columns with equal width */
+  grid-gap: 10px; /* Adjust gap between grid items as needed */
+  background-color: #CADBF8;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Enable overflow scrolling for grid items */
+  margin-left: 15px;
+}
+
+.grid-container-filter-item {
+  background-color: #f6f7fc; /* Light background color */
+  padding: 10px; /* Add padding to create space inside the filter items */
+  border-radius: 8px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  color: #0027B2; /* Dark blue text color */
+  margin-bottom: 10px; /* Space between filter items */
+}
+
+.grid-container-filter-item select,
+.grid-container-filter-item input {
+  background-color: #f6f7fc; /* Ensure inputs match the background */
+  border: none; /* Remove border for a clean look */
+  font-weight: bold; /* Keep the font consistent */
+  color: #0027B2; /* Match the input text color with the filter item text */
+  border-radius: 8px; /* Rounded corners for inputs */
+  padding: 5px 10px; /* Inner padding for inputs */
+}
+
+.grid-container-filter-item .clear-all {
+  color: #00b2a9; /* Teal color for "Clear All" */
+  font-weight: bold;
+  cursor: pointer; /* Pointer cursor for interactivity */
+  text-decoration: underline; /* Underline the "Clear All" link */
+}
+
+.grid-container-filter-item .apply-filters-button {
+  background-color: #0027B2; /* Dark blue background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.grid-container-filter-item .apply-filters-button:hover {
+  background-color: #001f99; /* Slightly darker blue on hover */
+}
+
+
+.grid-container div:hover{
+  background-color: #E2E8F2;
+  }
+
+.grid-header {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  color: darkblue;
+  background-color: white;
+  margin-right: -10px;
+}
+
+
+.grid-header-last {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  color: darkblue;
+  background-color: white;
+  margin-right: 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.grid-header-first {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  color: darkblue;
+  background-color: white;
+  margin-right: -10px;
+  border-radius: 8px 0 0 8px;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6; /* Optional: add bottom border to separate rows */
+  background-color: white;
+  margin-right: -10px;
+}
+
+
+.grid-item-first{
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6; /* Optional: add bottom border to separate rows */
+  background-color: white;
+  margin-right: -10px;
+  border-radius: 8px 0 0 8px;
+}
+
+.grid-item-last{
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6; /* Optional: add bottom border to separate rows */
+  background-color: white;
+  margin-right: 0px !important;
+  border-radius: 0 8px 8px 0;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.grid-container-charts{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 200px 300px;
+  grid-gap: 10px;
+  width: 113%;
+}
+
+.grid-container-charts > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-item-barchart{
+margin-left: -240px;
+}
+
+.grid-container-filters{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-container-events{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+/* Card Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr)); /* Adjusted for responsive columns */
+  grid-gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Individual Card Styles */
+.cards {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Single Card Container - Spans Full Width */
+.single-card-container {
+  grid-column: span 2/ auto; /* Default for two-column layout */
+}
+
+/* Card Hover Effect */
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.cards .card-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0027B2;
+  margin-bottom: 10px;
+}
+
+/* Card Body */
+.cards .card-body {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Card Footer */
+.cards .card-footer {
+  text-align: right;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusts for 2 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; /* Stacks cards vertically */
+  }
+
+  .single-card-container {
+    grid-column: span 1 / auto; /* Single card still spans full width on small screens */
+  }
+}
+
